@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links – Janine Makorre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white dark:bg-zinc-950 text-zinc-600 dark:text-zinc-300 min-h-screen flex flex-col transition-colors duration-300">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4 flex justify-between items-center bg-transparent border-b border-transparent">
+        <a href="index.html" class="text-xl font-bold text-zinc-900 dark:text-white tracking-tight">Janine Makorre</a>
+        <div class="hidden md:flex space-x-8 items-center">
+            <a href="index.html" class="text-zinc-500 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">About</a>
+            <a href="technical-work.html" class="text-zinc-500 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">Technical Work</a>
+            <a href="collaboration.html" class="text-zinc-500 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">Collaboration</a>
+            <a href="docs-writing.html" class="text-zinc-500 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">Docs & Writing</a>
+            <a href="Ramalama-docs-contribution.html" class="text-zinc-500 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">Ramalama Docs</a>
+            <a href="links.html" class="text-zinc-900 dark:text-white font-medium">Links</a>
+            
+            <button id="theme-toggle" class="p-2 rounded-full bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:text-indigo-500 transition-colors">
+                <svg id="theme-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu Toggle -->
+        <div class="flex items-center space-x-4 md:hidden">
+            <button class="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-white transition-colors" onclick="document.getElementById('theme-toggle').click()">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2m0 14v2m9-9h-2M5 12H3m14.5 5.5l-1.5-1.5M7.5 7.5L6 6m10 0l-1.5 1.5M7.5 16.5L6 18M12 7a5 5 0 100 10 5 5 0 000-10z"></path>
+                </svg>
+            </button>
+            <button id="menu-btn" class="text-zinc-400 hover:text-zinc-600 dark:hover:text-white transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="flex-grow flex flex-col items-center justify-center px-6 pt-32 pb-20">
+        <div class="max-w-md w-full space-y-12 text-center reveal">
+            <div>
+                <h1 class="text-4xl font-bold text-zinc-900 dark:text-white mb-4">Connect</h1>
+                <p class="text-zinc-500 dark:text-zinc-500">Find me across the digital ecosystem.</p>
+            </div>
+
+            <div class="grid gap-4">
+                <a href="https://github.com/Uxer-Janine/outreachy-docling-task.git" target="_blank" class="group p-6 bg-zinc-50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800 rounded-2xl flex items-center justify-between hover:bg-white dark:hover:bg-zinc-900/60 hover:border-indigo-500/30 transition-all">
+                    <span class="text-zinc-900 dark:text-white font-medium group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">GitHub Repository</span>
+                    <svg class="w-5 h-5 text-zinc-400 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7-7 7M5 12h16"></path></svg>
+                </a>
+                <a href="https://medium.com/@janinemakorre" target="_blank" class="group p-6 bg-zinc-50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800 rounded-2xl flex items-center justify-between hover:bg-white dark:hover:bg-zinc-900/60 hover:border-indigo-500/30 transition-all">
+                    <span class="text-zinc-900 dark:text-white font-medium group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Medium Blog</span>
+                    <svg class="w-5 h-5 text-zinc-400 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7-7 7M5 12h16"></path></svg>
+                </a>
+                <a href="https://hackmd.io/@framalama-om26-maintainers/BJtMhF-3-e" target="_blank" class="group p-6 bg-zinc-50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800 rounded-2xl flex items-center justify-between hover:bg-white dark:hover:bg-zinc-900/60 hover:border-indigo-500/30 transition-all">
+                    <span class="text-zinc-900 dark:text-white font-medium group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Peer Review (HackMD)</span>
+                    <svg class="w-5 h-5 text-zinc-400 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7-7 7M5 12h16"></path></svg>
+                </a>
+                <a href="https://hackmd.io/@framalama-om26-maintainers/S1Bkc9ai-e/edit" target="_blank" class="group p-6 bg-zinc-50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800 rounded-2xl flex items-center justify-between hover:bg-white dark:hover:bg-zinc-900/60 hover:border-indigo-500/30 transition-all">
+                    <span class="text-zinc-900 dark:text-white font-medium group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Ramalama Docs (HackMD)</span>
+                    <svg class="w-5 h-5 text-zinc-400 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7-7 7M5 12h16"></path></svg>
+                </a>
+            </div>
+
+            <a href="index.html" class="inline-block text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-300 text-sm font-medium transition-colors">
+                &larr; Back to Portfolio
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-zinc-100 dark:border-zinc-900 py-12 px-6 bg-white dark:bg-zinc-950 transition-colors">
+        <div class="max-w-6xl mx-auto text-center text-zinc-400 text-sm">
+            &copy; 2026 Janine Makorre.
+        </div>
+    </footer>
+
+    <script src="components.js"></script>
+</body>
+</html>

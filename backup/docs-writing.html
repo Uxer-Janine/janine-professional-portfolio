@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docs & Writing – Janine Makorre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white dark:bg-zinc-950 text-zinc-600 dark:text-zinc-300 transition-colors duration-300">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4 flex justify-between items-center bg-transparent border-b border-transparent">
+        <a href="index.html" class="text-xl font-bold text-zinc-900 dark:text-white tracking-tight">Janine Makorre</a>
+        <div class="hidden md:flex space-x-8 items-center">
+            <a href="index.html" class="text-zinc-500 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">About</a>
+            <a href="technical-work.html" class="text-zinc-500 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">Technical Work</a>
+            <a href="collaboration.html" class="text-zinc-500 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">Collaboration</a>
+            <a href="docs-writing.html" class="text-zinc-900 dark:text-white font-medium">Docs & Writing</a>
+            <a href="Ramalama-docs-contribution.html" class="text-zinc-500 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">Ramalama Docs</a>
+            <a href="links.html" class="text-zinc-500 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">Links</a>
+            
+            <button id="theme-toggle" class="p-2 rounded-full bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:text-indigo-500 transition-colors">
+                <svg id="theme-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu Toggle -->
+        <div class="flex items-center space-x-4 md:hidden">
+            <button class="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-white transition-colors" onclick="document.getElementById('theme-toggle').click()">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2m0 14v2m9-9h-2M5 12H3m14.5 5.5l-1.5-1.5M7.5 7.5L6 6m10 0l-1.5 1.5M7.5 16.5L6 18M12 7a5 5 0 100 10 5 5 0 000-10z"></path>
+                </svg>
+            </button>
+            <button id="menu-btn" class="text-zinc-400 hover:text-zinc-600 dark:hover:text-white transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-white dark:bg-zinc-950 px-6 py-24 flex flex-col space-y-6 text-2xl font-light">
+        <a href="index.html">About</a>
+        <a href="technical-work.html">Technical Work</a>
+        <a href="collaboration.html">Collaboration</a>
+        <a href="docs-writing.html" class="text-zinc-900 dark:text-white">Docs & Writing</a>
+        <a href="Ramalama-docs-contribution.html">Ramalama Docs</a>
+        <a href="links.html">Links</a>
+    </div>
+
+    <!-- Header -->
+    <header class="pt-40 pb-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto reveal">
+            <h1 class="text-4xl md:text-6xl font-bold text-zinc-900 dark:text-white mb-6">Documentation & Writing</h1>
+            <p class="text-lg text-zinc-500 dark:text-zinc-400">
+                Translating complex technical concepts into accessible, human-centric documentation.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24">
+        
+        <!-- Ramalama Section -->
+        <section class="reveal space-y-8">
+            <div class="p-8 md:p-12 bg-zinc-50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800 rounded-3xl">
+                <div class="flex items-center space-x-4 mb-6">
+                    <span class="px-3 py-1 bg-indigo-600/10 text-indigo-600 dark:text-indigo-400 text-xs font-mono uppercase tracking-widest rounded-full border border-indigo-500/20">Project Contribution</span>
+                    <span class="text-zinc-400 dark:text-zinc-500 text-sm">Fedora / Ramalama</span>
+                </div>
+                <h2 class="text-3xl font-bold text-zinc-900 dark:text-white mb-6">Ramalama Documentation</h2>
+                <div class="prose prose-zinc dark:prose-invert max-w-none text-zinc-500 dark:text-zinc-400 space-y-4">
+                    <p>
+                        Contributed to refining the Ramalama ecosystem documentation, focusing on consistency, readability, and accessibility for new users. This work involved cross-functional collaboration with other Outreachy applicants.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 text-zinc-400 dark:text-zinc-500">
+                        <li>Refined structural hierarchy of core docs.</li>
+                        <li>Standardized formatting and writing styles across multiple modules.</li>
+                        <li>Participated in community discussions for documentation best practices.</li>
+                    </ul>
+                </div>
+                <div class="mt-10">
+                    <a href="https://hackmd.io/@framalama-om26-maintainers/S1Bkc9ai-e/edit" target="_blank" class="px-8 py-4 bg-zinc-900 dark:bg-zinc-900 hover:bg-zinc-800 dark:hover:bg-zinc-800 border border-zinc-800 text-white rounded-xl font-medium transition-all inline-flex items-center">
+                        View Collaborative Guide
+                        <svg class="w-4 h-4 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles & Blog Posts -->
+        <section class="reveal space-y-12">
+            <h2 class="text-3xl font-bold text-zinc-900 dark:text-white">Articles & Series</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Outreachy Guide -->
+                <div class="p-8 bg-zinc-50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800 rounded-2xl hover:bg-white dark:hover:bg-zinc-900/60 transition-all group">
+                    <span class="text-xs font-mono text-indigo-500 uppercase tracking-widest mb-2 block">Outreachy Guide</span>
+                    <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-4 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Navigating the Contribution Phase</h3>
+                    <p class="text-zinc-500 text-sm mb-6">A practical, step-by-step guide to help new applicants navigate the process with clarity and confidence.</p>
+                    <a href="https://medium.com/@janinemakorre/how-to-navigate-the-outreachy-contribution-phase-without-getting-overwhelmed-0ab4b4d5978d" target="_blank" class="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-300 hover:text-indigo-500 transition-colors">
+                        Read Story <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7-7 7M5 12h16"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Fedora Posts -->
+                <div class="p-8 bg-zinc-50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800 rounded-2xl hover:bg-white dark:hover:bg-zinc-900/60 transition-all group">
+                    <span class="text-xs font-mono text-indigo-500 uppercase tracking-widest mb-2 block">Fedora Ecosystem</span>
+                    <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-4 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Community & Technical Journey</h3>
+                    <div class="space-y-3">
+                        <a href="https://medium.com/@janinemakorre/getting-started-with-fedora-a-simple-introduction-b0b87de6751c" target="_blank" class="block text-sm text-zinc-500 hover:text-indigo-400 underline decoration-zinc-800 underline-offset-4 decoration-1">Getting Started with Fedora</a>
+                        <a href="https://medium.com/@janinemakorre/my-experience-with-the-fedora-docling-project-beff435bd217" target="_blank" class="block text-sm text-zinc-500 hover:text-indigo-400 underline decoration-zinc-800 underline-offset-4 decoration-1">Experience with Docling Project</a>
+                        <a href="https://medium.com/@janinemakorre/inside-fedora-what-it-actually-feels-like-to-contribute-from-a-former-outsider-78ca774e0ea2" target="_blank" class="block text-sm text-zinc-500 hover:text-indigo-400 underline decoration-zinc-800 underline-offset-4 decoration-1">Fedora Insider Tips</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ramalama For Dummies Series -->
+            <div class="p-8 md:p-12 bg-indigo-600/5 dark:bg-indigo-600/10 border border-indigo-500/20 rounded-3xl">
+                <div class="max-w-3xl">
+                    <h3 class="text-2xl font-bold text-zinc-900 dark:text-indigo-300 mb-6">RamaLama "For Dummies" Series</h3>
+                    <p class="text-zinc-500 dark:text-zinc-400 mb-8 leading-relaxed">
+                        Currently developing a simplified guide to explain RamaLama concepts in an accessible way, breaking down complex ideas into beginner-friendly explanations.
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <a href="https://medium.com/@janinemakorre/ramalama-for-dummies-by-a-dummy-1-what-is-ocr-and-why-it-matters-2146ad3f0a9a" target="_blank" class="p-4 bg-white/50 dark:bg-zinc-900/50 rounded-xl border border-indigo-500/10 hover:border-indigo-500/40 hover:bg-white dark:hover:bg-zinc-900 transition-all group">
+                            <span class="text-indigo-500 font-mono text-xs uppercase mb-1 block">Part #1</span>
+                            <p class="text-sm font-medium text-zinc-800 dark:text-zinc-200 group-hover:text-indigo-500">What is OCR & Why It Matters</p>
+                        </a>
+                        <a href="https://medium.com/@janinemakorre/ramalama-for-dummies-by-a-dummy-2-what-is-docling-and-why-its-more-than-ocr-465061803350" target="_blank" class="p-4 bg-white/50 dark:bg-zinc-900/50 rounded-xl border border-indigo-500/10 hover:border-indigo-500/40 hover:bg-white dark:hover:bg-zinc-900 transition-all group">
+                            <span class="text-indigo-500 font-mono text-xs uppercase mb-1 block">Part #2</span>
+                            <p class="text-sm font-medium text-zinc-800 dark:text-zinc-200 group-hover:text-indigo-500">Docling: More Than Just OCR</p>
+                        </a>
+                        <a href="https://medium.com/@janinemakorre/ramalama-for-dummies-by-a-dummy-3-what-is-rag-and-why-ai-needs-it-5f1a505142b0" target="_blank" class="p-4 bg-white/50 dark:bg-zinc-900/50 rounded-xl border border-indigo-500/10 hover:border-indigo-500/40 hover:bg-white dark:hover:bg-zinc-900 transition-all group">
+                            <span class="text-indigo-500 font-mono text-xs uppercase mb-1 block">Part #3</span>
+                            <p class="text-sm font-medium text-zinc-800 dark:text-zinc-200 group-hover:text-indigo-500">What is RAG & Why AI Needs It</p>
+                        </a>
+                        <a href="https://medium.com/@janinemakorre/ramalama-for-dummies-by-a-dummy-4-from-messy-pdfs-to-searchable-ai-docling-ocr-retrieval-93b0ddb223cd" target="_blank" class="p-4 bg-white/50 dark:bg-zinc-900/50 rounded-xl border border-indigo-500/10 hover:border-indigo-500/40 hover:bg-white dark:hover:bg-zinc-900 transition-all group">
+                            <span class="text-indigo-500 font-mono text-xs uppercase mb-1 block">Part #4</span>
+                            <p class="text-sm font-medium text-zinc-800 dark:text-zinc-200 group-hover:text-indigo-500">From Messy PDFs to Searchable AI</p>
+                        </a>
+                        <a href="https://medium.com/@janinemakorre/ramalama-for-dummies-by-a-dummy-5-from-text-to-meaning-parsing-why-structure-matters-a7f816ccb62d" target="_blank" class="p-4 bg-white/50 dark:bg-zinc-900/50 rounded-xl border border-indigo-500/10 hover:border-indigo-500/40 hover:bg-white dark:hover:bg-zinc-900 transition-all group">
+                            <span class="text-indigo-500 font-mono text-xs uppercase mb-1 block">Part #5</span>
+                            <p class="text-sm font-medium text-zinc-800 dark:text-zinc-200 group-hover:text-indigo-500">From Text to Meaning (Parsing)</p>
+                        </a>
+                        <a href="https://medium.com/@janinemakorre/ramalama-for-dummies-6-i-got-stuck-and-why-that-matters-bfb9853e5d26" target="_blank" class="p-4 bg-white/50 dark:bg-zinc-900/50 rounded-xl border border-indigo-500/10 hover:border-indigo-500/40 hover:bg-white dark:hover:bg-zinc-900 transition-all group">
+                            <span class="text-indigo-500 font-mono text-xs uppercase mb-1 block">Part #6</span>
+                            <p class="text-sm font-medium text-zinc-800 dark:text-zinc-200 group-hover:text-indigo-500">I Got Stuck (And Why It Matters)</p>
+                        </a>
+                        <a href="https://medium.com/@janinemakorre/ramalama-for-dummies-by-a-dummy-7-what-is-ramalama-and-why-it-finally-makes-sense-3d29cd0a4df9" target="_blank" class="col-span-1 sm:col-span-2 p-4 bg-white/50 dark:bg-zinc-900/50 rounded-xl border border-indigo-500/10 hover:border-indigo-500/40 hover:bg-white dark:hover:bg-zinc-900 transition-all group">
+                            <span class="text-indigo-500 font-mono text-xs uppercase mb-1 block">Part #7</span>
+                            <p class="text-sm font-medium text-zinc-800 dark:text-zinc-200 group-hover:text-indigo-500 text-center">What is RamaLama? - Why It Finally Makes Sense</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflections & Learnings -->
+        <section class="reveal space-y-12">
+            <div>
+                <h2 class="text-3xl font-bold text-zinc-900 dark:text-white mb-6">Reflections & Learnings</h2>
+                <p class="text-lg text-zinc-500 dark:text-zinc-400">
+                    Intentional documentation of both technical challenges and collaborative growth.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Technical Reflections -->
+                <div class="space-y-6">
+                    <h3 class="text-xl font-bold text-zinc-900 dark:text-white flex items-center">
+                        <svg class="w-5 h-5 mr-3 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        Technical Insights
+                    </h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="https://github.com/Uxer-Janine/outreachy-docling-task/blob/master/01-notes/02-technical/01-windows-symlink-error-and-fix.md" target="_blank" class="group block p-4 bg-zinc-50 dark:bg-zinc-900/20 border border-zinc-200 dark:border-zinc-800 rounded-xl hover:border-indigo-500/30 transition-all">
+                                <span class="text-sm font-medium text-zinc-800 dark:text-zinc-200 group-hover:text-indigo-500">Windows Symlink Error & Fix</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Uxer-Janine/outreachy-docling-task/blob/master/01-notes/02-technical/02-docling-environment-setup-and-debugging.md" target="_blank" class="group block p-4 bg-zinc-50 dark:bg-zinc-900/20 border border-zinc-200 dark:border-zinc-800 rounded-xl hover:border-indigo-500/30 transition-all">
+                                <span class="text-sm font-medium text-zinc-800 dark:text-zinc-200 group-hover:text-indigo-500">Docling Setup & Debugging</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Uxer-Janine/outreachy-docling-task/blob/master/01-notes/02-technical/03-docling-tesseract-ocr.md" target="_blank" class="group block p-4 bg-zinc-50 dark:bg-zinc-900/20 border border-zinc-200 dark:border-zinc-800 rounded-xl hover:border-indigo-500/30 transition-all">
+                                <span class="text-sm font-medium text-zinc-800 dark:text-zinc-200 group-hover:text-indigo-500">Docling Tesseract OCR</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Uxer-Janine/outreachy-docling-task/blob/master/01-notes/02-technical/04-docling-easyocr.md" target="_blank" class="group block p-4 bg-zinc-50 dark:bg-zinc-900/20 border border-zinc-200 dark:border-zinc-800 rounded-xl hover:border-indigo-500/30 transition-all">
+                                <span class="text-sm font-medium text-zinc-800 dark:text-zinc-200 group-hover:text-indigo-500">Docling EasyOCR</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Uxer-Janine/outreachy-docling-task/blob/master/01-notes/02-technical/05-docling-rapidocr.md" target="_blank" class="group block p-4 bg-zinc-50 dark:bg-zinc-900/20 border border-zinc-200 dark:border-zinc-800 rounded-xl hover:border-indigo-500/30 transition-all">
+                                <span class="text-sm font-medium text-zinc-800 dark:text-zinc-200 group-hover:text-indigo-500">Docling Rapidocr</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Non-Technical Reflections -->
+                <div class="space-y-6">
+                    <h3 class="text-xl font-bold text-zinc-900 dark:text-white flex items-center">
+                        <svg class="w-5 h-5 mr-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        Personal Growth
+                    </h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="https://github.com/Uxer-Janine/outreachy-docling-task/blob/master/01-notes/03-dev-notes/01-weeek-1.md" target="_blank" class="group block p-4 bg-zinc-50 dark:bg-zinc-900/20 border border-zinc-200 dark:border-zinc-800 rounded-xl hover:border-indigo-500/30 transition-all">
+                                <span class="text-sm font-medium text-zinc-800 dark:text-zinc-200 group-hover:text-indigo-500">Week 1: Foundations & Public Learning</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Uxer-Janine/outreachy-docling-task/blob/master/01-notes/03-dev-notes/02-week-2.md" target="_blank" class="group block p-4 bg-zinc-50 dark:bg-zinc-900/20 border border-zinc-200 dark:border-zinc-800 rounded-xl hover:border-indigo-500/30 transition-all">
+                                <span class="text-sm font-medium text-zinc-800 dark:text-zinc-200 group-hover:text-indigo-500">Week 2: Consistency & Feedback Loops</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Uxer-Janine/outreachy-docling-task/blob/master/01-notes/03-dev-notes/03-week-3.md" target="_blank" class="group block p-4 bg-zinc-50 dark:bg-zinc-900/20 border border-zinc-200 dark:border-zinc-800 rounded-xl hover:border-indigo-500/30 transition-all">
+                                <span class="text-sm font-medium text-zinc-800 dark:text-zinc-200 group-hover:text-indigo-500">Week 3: Progress & Development Notes</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="p-6 bg-zinc-100 dark:bg-zinc-900/60 rounded-2xl border border-zinc-200 dark:border-zinc-800">
+                        <p class="text-xs text-zinc-500 italic leading-relaxed">
+                            "Relfections helped me move beyond completing tasks, allowing me to think intentionally about how I work, collaborate, and continue improving the human side of open-source practice."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prerequisites Section -->
+        <section class="reveal">
+            <div class="p-8 md:p-12 bg-zinc-50 dark:bg-zinc-900/20 border border-zinc-200 dark:border-zinc-800 rounded-3xl">
+                <h2 class="text-2xl font-bold text-zinc-900 dark:text-white mb-8">Onboarding & Prerequisites</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                    <a href="https://forge.fedoraproject.org/commops/interns/issues/116#issuecomment-592113" target="_blank" class="text-sm text-zinc-500 hover:text-indigo-500 transition-colors underline underline-offset-4 decoration-zinc-800">Fedora Account (FAS)</a>
+                    <a href="https://forge.fedoraproject.org/commops/interns/issues/117#issuecomment-592118" target="_blank" class="text-sm text-zinc-500 hover:text-indigo-500 transition-colors underline underline-offset-4 decoration-zinc-800">Personal Blog Setup</a>
+                    <a href="https://forge.fedoraproject.org/commops/interns/issues/118#issuecomment-593456" target="_blank" class="text-sm text-zinc-500 hover:text-indigo-500 transition-colors underline underline-offset-4 decoration-zinc-800">Intro Blog Post</a>
+                    <a href="https://forge.fedoraproject.org/commops/interns/issues/123#issuecomment-593475" target="_blank" class="text-sm text-zinc-500 hover:text-indigo-500 transition-colors underline underline-offset-4 decoration-zinc-800">Social Promotion</a>
+                    <a href="https://forge.fedoraproject.org/commops/interns/issues/120#issuecomment-608917" target="_blank" class="text-sm text-zinc-500 hover:text-indigo-500 transition-colors underline underline-offset-4 decoration-zinc-800">Onboarding Guide</a>
+                    <a href="https://forge.fedoraproject.org/commops/interns/issues/121#issuecomment-611680" target="_blank" class="text-sm text-zinc-500 hover:text-indigo-500 transition-colors underline underline-offset-4 decoration-zinc-800">Portfolio Submission</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-zinc-100 dark:border-zinc-900 py-12 px-6 bg-white dark:bg-zinc-950 mt-32 transition-colors">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-zinc-400 dark:text-zinc-500 text-sm">&copy; 2026 Janine Makorre.</div>
+            <div class="flex space-x-6">
+                <a href="index.html" class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">About</a>
+                <a href="links.html" class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">Links</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="components.js"></script>
+</body>
+</html>
