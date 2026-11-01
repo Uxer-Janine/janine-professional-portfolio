@@ -1,0 +1,45 @@
+/* Contact-only styling; existing fonts, surfaces, amber and themes remain shared. */
+.contact-intro { padding: 140px 0 34px; }
+.contact-intro h1 { font-size: clamp(2.8rem, 5vw, 4rem); margin-bottom: 22px; }
+.contact-intro .section-label { color: var(--text-secondary); }
+.contact-intro .lead { max-width: 720px; margin-bottom: 0; }
+.contact-channels { padding: 0 0 64px; }
+.contact-layout { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.6fr); gap: 40px; align-items: start; }
+.contact-layout h2 { font: 500 1.3rem/1.5 var(--font-sans); margin-bottom: 8px; }
+.contact-section-note { color: var(--text-secondary); font-size: .9rem; margin-bottom: 22px; }
+.contact-email, .contact-profile { color: var(--text-primary); background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 10px; }
+.contact-email:hover, .contact-profile:hover { border-color: var(--accent-amber); }
+.contact-email { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; padding: 30px; border-top: 2px solid var(--accent-amber); }
+.contact-email-address { font-size: clamp(1rem, 1.6vw, 1.2rem); font-weight: 500; overflow-wrap: anywhere; max-width: 100%; }
+.contact-email-action { display: inline-flex; gap: 16px; align-items: center; min-height: 44px; font-size: .88rem; text-decoration: underline; text-underline-offset: 4px; }
+.contact-profiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.contact-profile { display: grid; grid-template-columns: 28px minmax(0, 1fr) 12px; align-items: start; gap: 14px; padding: 22px; min-width: 0; }
+.contact-profile--medium { grid-column: 1 / -1; }
+.contact-profile h3 { font: 500 1.05rem/1.5 var(--font-sans); margin-bottom: 8px; }
+.contact-profile p { color: var(--text-secondary); font-size: .83rem; line-height: 1.7; margin-bottom: 14px; }
+.contact-profile-action { font-size: .78rem; line-height: 1.7; text-decoration: underline; text-underline-offset: 4px; }
+.contact-external { color: var(--text-secondary); font-size: .8rem; }
+.contact-platform-icon { display: block; width: 26px; height: 26px; background-color: currentColor; mask: var(--contact-icon) center / contain no-repeat; -webkit-mask: var(--contact-icon) center / contain no-repeat; flex-shrink: 0; }
+.icon-linkedin { --contact-icon: url('Assets/Icons/bootstrap/linkedin.svg'); }
+.icon-github { --contact-icon: url('Assets/Icons/bootstrap/github.svg'); }
+.icon-behance { --contact-icon: url('Assets/Icons/bootstrap/behance.svg'); }
+.icon-dribbble { --contact-icon: url('Assets/Icons/bootstrap/dribbble.svg'); }
+.icon-medium { --contact-icon: url('Assets/Icons/bootstrap/medium.svg'); }
+.icon-envelope { --contact-icon: url('Assets/Icons/bootstrap/envelope.svg'); }
+.contact-footer { padding: 28px 0; text-align: center; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: .85rem; }
+@media (max-width: 1000px) {
+  .contact-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .contact-email { flex-direction: row; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .contact-email-action { margin-left: auto; }
+}
+@media (max-width: 640px) {
+  .contact-intro { padding: 116px 0 28px; }
+  .contact-channels { padding-bottom: 44px; }
+  .contact-profiles { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .contact-profile { padding: 22px; }
+  .contact-email { flex-direction: column; align-items: flex-start; padding: 24px; gap: 14px; }
+  .contact-email-action { margin-left: 0; }
+}
+@media (forced-colors: active) {
+  .contact-platform-icon { forced-color-adjust: none; background-color: LinkText; }
+}

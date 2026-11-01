@@ -1,0 +1,59 @@
+/* Community-only layout; all colors and type come from the existing theme. */
+.community-intro { padding: 140px 0 44px; }
+.community-intro h1 { font-size: clamp(2.8rem, 5vw, 4rem); }
+.community-intro .lead { max-width: 790px; margin-bottom: 28px; }
+.community-jumps { display: flex; flex-wrap: wrap; gap: 10px; }
+.community-jumps a { display: inline-flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 44px; padding: 12px 15px; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 7px; font-size: .8rem; color: var(--text-primary); }
+.community-jumps a:hover { border-color: var(--accent-amber); }
+.community-section { border-top: 1px solid var(--border-color); padding: 56px 0; }
+.community-section h2 { font-size: clamp(2rem, 3.6vw, 2.8rem); }
+.community-section--quiet { padding: 36px 0; }
+.community-section--quiet h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); }
+.community-section--surface { background: var(--bg-surface); }
+.community-heading { max-width: 850px; margin-bottom: 28px; }
+.community-heading > p, .community-review-note { color: var(--text-secondary); margin-bottom: 0; }
+.community-card { padding: 30px; border: 1px solid var(--border-color); border-radius: 10px; background: var(--bg-surface); min-width: 0; }
+.community-card h3 { font: 500 1.45rem/1.4 var(--font-sans); margin-bottom: 12px; }
+.community-card p { color: var(--text-secondary); font-size: .94rem; }
+.community-card .community-role { font-size: .78rem; margin-bottom: 10px; }
+.community-card .community-dates { font-size: .82rem; margin-bottom: 12px; }
+.community-card .community-status { font-size: .77rem; border-left: 2px solid var(--accent-amber); padding-left: 10px; margin-bottom: 20px; color: var(--text-primary); }
+.community-oppia { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.5fr); gap: 32px; margin-bottom: 22px; }
+.community-card .community-context { font-size: .8rem; margin: 12px 0 0; }
+.community-mentor-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.community-mentor-grid .community-card { display: flex; flex-direction: column; }
+.community-mentor-grid .community-link { margin-top: auto; }
+.community-link { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; font-size: .86rem; font-weight: 500; line-height: 1.7; color: var(--text-primary); }
+.community-link:hover { color: var(--accent-text); }
+.community-wiki { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 32px; background: var(--bg-primary); }
+.community-guide { padding: 24px; border: 1px solid var(--border-color-hover); border-radius: 8px; background: var(--bg-surface); align-self: start; min-width: 0; }
+.community-guide .section-label { font-size: .7rem; }
+.community-guide h4 { font: 500 1.15rem/1.5 var(--font-sans); margin-bottom: 14px; }
+.community-guide p { font-size: .87rem; }
+.community-footer .cta-title { font-family: var(--font-serif); }
+.community-girls { background: var(--bg-surface); }
+.community-girls > .container > h2 { max-width: 900px; margin-bottom: 28px; }
+.community-personal-story { max-width: 78ch; margin-bottom: 32px; padding-left: 24px; border-left: 2px solid var(--accent-amber); }
+.community-personal-story h3 { font: 500 1.25rem/1.5 var(--font-sans); margin-bottom: 16px; }
+.community-personal-story p { color: var(--text-secondary); }
+.community-personal-story p:last-child { margin-bottom: 0; }
+.community-initiative-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.community-initiative-grid .community-card { display: flex; flex-direction: column; background: var(--bg-primary); }
+.community-initiative-grid .community-role { line-height: 1.8; margin-bottom: 22px; }
+.community-initiative-grid .community-status { margin-top: auto; margin-bottom: 0; }
+@media (max-width: 850px) {
+  .community-oppia, .community-wiki { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+}
+@media (max-width: 640px) {
+  .community-initiative-grid { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .community-personal-story { padding-left: 18px; margin-bottom: 26px; }
+  .community-intro { padding: 116px 0 32px; }
+  .community-jumps { display: grid; grid-template-columns: minmax(0, 1fr); }
+  .community-jumps a { font-size: .76rem; }
+  .community-section { padding: 40px 0; }
+  .community-section--quiet { padding: 28px 0; }
+  .community-mentor-grid { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .community-card { padding: 24px; }
+  .community-card h3 { font-size: 1.25rem; }
+  .community-guide { padding: 20px; }
+}

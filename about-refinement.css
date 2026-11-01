@@ -1,0 +1,23 @@
+/* About-only refinement; shared typography, themes and family gallery stay intact. */
+.phase-one-about .about-intro { padding: 128px 0 44px; }
+.phase-one-about .about-intro .about-story-grid { align-items: center; }
+.phase-one-about .about-intro h1 { margin-bottom: 24px; }
+.phase-one-about .about-intro p { max-width: 62ch; color: var(--text-secondary); margin-bottom: 16px; }
+.phase-one-about .about-intro .card-link { margin-top: 6px; }
+.phase-one-about .about-intro .about-portrait { width: 100%; max-width: 300px; justify-self: center; }
+.phase-one-about .about-values { padding: 44px 0; }
+.phase-one-about .about-values .section-header { margin-bottom: 24px; }
+.phase-one-about .about-values .impact-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.phase-one-about .about-values .impact-card { padding: 26px; }
+.phase-one-about .about-values .impact-card h3 { margin-bottom: 12px; }
+@media (max-width: 800px) {
+  .phase-one-about .about-intro .about-story-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .phase-one-about .about-values .impact-grid { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+}
+@media (max-width: 640px) {
+  .phase-one-about .about-intro { padding: 112px 0 32px; }
+  .phase-one-about .about-intro h1 { margin-bottom: 20px; }
+  .phase-one-about .about-intro .about-portrait { max-width: 260px; }
+  .phase-one-about .about-values { padding: 36px 0; }
+  .phase-one-about .about-values .impact-card { padding: 22px; }
+}
