@@ -64,3 +64,5 @@
 
 /* Keep the supplied small logo crisp at its native size. */
 .community-artifact--small-logo img { width: 165px; max-width: 100%; margin-inline: auto; }
+
+.community-artifact figcaption { font-size: .76rem; line-height: 1.7; color: var(--text-secondary); margin-top: 12px; }
