@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fedora / Ramalama Case Study — Janine Makorre</title>
+  <meta name="description" content="Detailed case study of Janine Robi Makorre's contribution to the Fedora ecosystem, Ramalama docs, and OCR pipelines.">
+  <script>try{const t=localStorage.getItem('janine-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch{}</script><link rel="stylesheet" href="style.css?v=phase1-review">
+  <style>
+    .project-meta-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 24px 0 36px;
+      padding: 16px 20px;
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+    }
+    .project-meta-item {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+    .project-content-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .project-sections section {
+      margin-bottom: 48px;
+    }
+    .project-sections h2 {
+      font-family: var(--font-sans);
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+    }
+    .sidebar-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .sidebar-card h3 {
+      font-family: var(--font-sans);
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+    }
+    .sidebar-list {
+      list-style: none;
+    }
+    .sidebar-list li {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+      padding-left: 12px;
+      border-left: 2px solid var(--accent-amber);
+    }
+    .download-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 12px;
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      font-size: 0.85rem;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+    .download-link:hover {
+      border-color: var(--border-color-hover);
+      color: var(--accent-amber);
+    }
+    .repo-structure {
+      font-family: monospace;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      background-color: var(--bg-primary);
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    .screenshot-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .screenshot-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .screenshot-card img {
+      width: 100%;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+    }
+    .screenshot-caption {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      padding: 10px 12px;
+    }
+    @media (max-width: 900px) {
+      .project-content-layout {
+        grid-template-columns: 1fr;
+      }
+      .screenshot-gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        Janine Makorre <span class="logo-dot"></span>
+      </a>
+      
+      <button class="menu-toggle" type="button" aria-label="Toggle Navigation" aria-controls="main-navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav aria-label="Main navigation"><ul class="nav-links" id="main-navigation"><li><a href="about.html">About</a></li><li><a href="projects.html">Work</a></li><li><a href="journey.html">Experience</a></li><li><a href="community.html">Community &amp; Impact</a></li><li><a href="contact.html">Contact</a></li><li>
+          <button class="theme-btn" aria-label="Toggle Light/Dark Theme">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+            </svg>
+          </button>
+        </li></ul></nav>
+    </div>
+  </header>
+
+  <!-- Project Header Banner -->
+  <main class="container" style="padding-top: 160px; padding-bottom: 80px;">
+    <div class="project-header">
+      <span class="section-label">Open Source Case Study</span>
+      <h1 style="font-size: 2.75rem; font-family: var(--font-sans); font-weight: 500;">Fedora / Ramalama Documentation & Docling OCR</h1>
+      <p class="lead" style="max-width: 800px;">
+        Evaluating multilingual OCR pipelines and scaling collaborative contribution documentation for the containerized AI tool ecosystem.
+      </p>
+      
+      <div class="project-meta-strip">
+        <div class="project-meta-item"><strong>Domain:</strong> Open Source & ML</div>
+        <div class="project-meta-item"><strong>Platform:</strong> Fedora Ecosystem / Outreachy</div>
+        <div class="project-meta-item"><strong>Stack:</strong> Python, Docling, Tesseract, Git</div>
+        <div class="project-meta-item"><strong>Status:</strong> Completed Phase</div>
+      </div>
+    </div>
+
+    <!-- Project Two-Column Layout -->
+    <div class="project-content-layout">
+      <!-- Main Content Sections -->
+      <div class="project-sections">
+        
+        <!-- Objectives & Problem -->
+        <section id="objectives">
+          <h2>Objectives & Problem Statement</h2>
+          <p>The Fedora ecosystem’s Ramalama project needed an accessible, clear documentation structure to assist new users in working with localized and containerized models. As part of this contribution phase, the primary challenges were:</p>
+          <ul>
+            <li style="margin-left: 20px; margin-bottom: 8px;">Translating complex CLI behaviors into accessible tutorials.</li>
+            <li style="margin-left: 20px; margin-bottom: 8px;">Standardizing writing styles and document structural hierarchy across multiple independent modules.</li>
+            <li style="margin-left: 20px; margin-bottom: 8px;">Converting unstructured PDF scan documents (in French and Swahili) into clean, indexable markdown for downstream search and AI pipelines.</li>
+          </ul>
+        </section>
+
+        <!-- Dataset & Files -->
+        <section id="dataset">
+          <h2>Dataset & Processing Files</h2>
+          <p>The pipeline was tested against a localized batch of unstructured research papers and administrative text. This dataset included:</p>
+          <ul>
+            <li style="margin-left: 20px; margin-bottom: 8px;">Swahili-language PDF scans containing multi-column tabular results.</li>
+            <li style="margin-left: 20px; margin-bottom: 8px;">French-language research articles with dense mathematical expressions.</li>
+            <li style="margin-left: 20px; margin-bottom: 8px;">Extracted layout JSON indices and intermediate image files used for baseline verification.</li>
+          </ul>
+        </section>
+
+        <!-- Methodology & Process -->
+        <section id="methodology">
+          <h2>Methodology & Process</h2>
+          <p>We designed a multi-step OCR and peer verification pipeline to clean and publish the ecosystem guides:</p>
+          <ol style="margin-left: 20px; margin-bottom: 20px;">
+            <li style="margin-bottom: 8px;"><strong>OCR Parse Pipeline:</strong> Built a Python processing script leveraging IBM's Docling parser as a structural layout classifier, fallback-binding to Tesseract OCR for text reading.</li>
+            <li style="margin-bottom: 8px;"><strong>Performance Audit:</strong> Checked Swahili and French line length bounds, text error ratios, and formatting accuracy.</li>
+            <li style="margin-bottom: 8px;"><strong>Structured Peer Review:</strong> Initiated and coordinated a centralized tracking guide on HackMD, organizing 15+ remote contributors to peer-audit documentation fixes.</li>
+          </ol>
+        </section>
+
+        <!-- Visualizations -->
+        <section id="visualizations">
+          <h2>Visualizations & Documentation Artifacts</h2>
+          <p>Below are screenshots and audit logs compiled during the document parsing and community management phases:</p>
+          
+          <div class="screenshot-gallery">
+            <div class="screenshot-card">
+              <img src="Assets/Images/project-timelines.png" alt="Fedora Contribution Project Timelines">
+              <div class="screenshot-caption">Timeline coordination visual for task phases and reviews.</div>
+            </div>
+            <div class="screenshot-card">
+              <img src="Assets/Images/word-count-comparison.png" alt="OCR Parse Word Count Comparison">
+              <div class="screenshot-caption">Word count accuracy analysis across Swahili and French OCR scripts.</div>
+            </div>
+            <div class="screenshot-card">
+              <img src="Assets/Images/community-insight.png" alt="Ecosystem Community Insights">
+              <div class="screenshot-caption">Activity tracking dashboard for contributors across active threads.</div>
+            </div>
+            <div class="screenshot-card">
+              <img src="Assets/Images/peer-review-invite.png" alt="HackMD Peer Review Workspace invitation">
+              <div class="screenshot-caption">Centralized workspace setup to organize reviewer groups.</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Results -->
+        <section id="results">
+          <h2>Key Findings & Outcomes</h2>
+          <p>Through systematic workflow optimization, we demonstrated that layout-aware document parsers (like Docling) reduce OCR spelling corruption by up to 25% compared to raw flat text readers. We recommended standardizing containerized model setups inside the Ramalama CLI guides to keep dependencies unified across developer platforms.</p>
+        </section>
+
+      </div>
+
+      <!-- Sidebar Column -->
+      <aside>
+        
+        <!-- Tools Card -->
+        <div class="sidebar-card">
+          <h3>Tools & Skills</h3>
+          <ul class="sidebar-list">
+            <li>Python 3.10</li>
+            <li>IBM Docling Parser</li>
+            <li>Tesseract OCR Engine</li>
+            <li>Git & GitHub versioning</li>
+            <li>HackMD Workspace</li>
+            <li>Linux Terminal Scripting</li>
+          </ul>
+        </div>
+
+        <!-- Links Card -->
+        <div class="sidebar-card">
+          <h3>Project Artifacts</h3>
+          <a href="https://github.com/Uxer-Janine/outreachy-docling-task.git" class="download-link" target="_blank">
+            <span>GitHub Repository</span> ↗
+          </a>
+          <a href="https://hackmd.io/@framalama-om26-maintainers/S1Bkc9ai-e/edit" class="download-link" target="_blank">
+            <span>Ramalama Docs HackMD</span> ↗
+          </a>
+          <a href="https://hackmd.io/@framalama-om26-maintainers/BJtMhF-3-e" class="download-link" target="_blank">
+            <span>Peer Review Sheet</span> ↗
+          </a>
+        </div>
+
+        <!-- Repository Structure -->
+        <div class="sidebar-card">
+          <h3>Repository Structure</h3>
+          <pre class="repo-structure">
+├── Assets/Images
+├── scripts/ocr_pipeline.py
+├── data/input_swahili.pdf
+├── index.html
+├── style.css
+└── README.md</pre>
+        </div>
+
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-cta">
+    <div class="container">
+      <h2 class="cta-title">Interested in open-source AI or documentation tooling?</h2>
+      <a href="mailto:janinemakorre@gmail.com" class="btn btn-primary">Get in Touch</a>
+      <div class="footer-bottom">
+        &copy; 2026 Janine Robi Makorre. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="components.js?v=phase1"></script>
+</body>
+</html>

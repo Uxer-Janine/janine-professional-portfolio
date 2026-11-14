@@ -1,0 +1,190 @@
+{
+  "roles": [
+    {
+      "id": "yen",
+      "title": "Data Science Consultant",
+      "organization": "Young Entrepreneurs Network (YEN) Africa",
+      "start": "2025-10",
+      "end": null,
+      "discipline": "Data & analytics",
+      "summary": "I work with sales, inventory, customer, and training-conversion data to understand patterns and support commercial decisions.",
+      "responsibilities": [
+        "Clean, reconcile, and validate datasets, and maintain KPI reporting.",
+        "Investigate trends and anomalies, document findings, and explore ways to streamline manual reporting."
+      ]
+    },
+    {
+      "id": "ecitizen",
+      "title": "Service Designer",
+      "organization": "eCitizen",
+      "start": "2024-08",
+      "end": null,
+      "discipline": "Service design · data responsibilities from January 2026",
+      "summary": "I support government service digitization by connecting people's payment journeys with agency workflows and platform capabilities.",
+      "responsibilities": [
+        "Gather requirements with agency and finance teams, co-facilitate workshops, and map digital and offline payment journeys in service blueprints.",
+        "Translate findings into flows, wireframes, and prototypes for validation, and collaborate with delivery teams through onboarding and support."
+      ],
+      "extension": {
+        "title": "Data analysis responsibilities",
+        "start": "2026-01",
+        "text": "I analyze operational service data and logs, prepare and validate datasets, and produce KPI reports and documented findings alongside my service-design work."
+      }
+    },
+    {
+      "id": "oppia-role",
+      "title": "UI/UX Designer",
+      "organization": "Oppia Foundation",
+      "start": "2024-01",
+      "end": "2025-12",
+      "discipline": "Design & learner research",
+      "summary": "I investigated learner experiences and translated pain points into user flows and design recommendations.",
+      "responsibilities": [
+        "Contributed usability research and collaborated with distributed teams on learner needs.",
+        "Helped localize learning and research materials into Swahili."
+      ],
+      "link": {
+        "url": "projects.html#oppia",
+        "label": "View the documented topic-page study"
+      }
+    },
+    {
+      "id": "mbitrix",
+      "title": "UI/UX Design Trainee",
+      "organization": "Mbitrix",
+      "start": "2021-02",
+      "end": "2022-05",
+      "discipline": "Product design training",
+      "summary": "I created wireframes and Figma prototypes for client web and mobile projects.",
+      "responsibilities": [
+        "Supported research, worked with engineers on implementation, and contributed to design iterations."
+      ]
+    },
+    {
+      "id": "unitel",
+      "title": "ICT / Telecom Intern",
+      "organization": "Unitel Kenya",
+      "start": "2019-08",
+      "end": "2021-03",
+      "discipline": "Engineering foundation",
+      "summary": "I supported network performance monitoring, troubleshooting, technical reporting, and documentation.",
+      "responsibilities": []
+    }
+  ],
+  "mentorship": [
+    {
+      "id": "mingling-mentor",
+      "title": "UI/UX Design Mentor",
+      "organization": "Mingling Trends Marketing",
+      "start": "2024-03",
+      "end": "2025-12",
+      "summary": "I mentored product designers through research, wireframing, prototyping, and design reviews."
+    },
+    {
+      "id": "vumbua-mentor",
+      "title": "UI/UX Design Mentor",
+      "organization": "Vumbua Tech",
+      "start": "2023-01",
+      "end": "2024-12",
+      "summary": "I introduced high-school students to human-centred design, design careers, and practical research and design activities."
+    }
+  ],
+  "contributions": [
+    {
+      "title": "Wiki Education / Wikipedia Claim-Source Verification",
+      "date": "October 2026",
+      "type": "Outreachy applicant contributions",
+      "summary": "Claim assessment and research, proposed Evidence Lab UX, a merged technical contribution, documentation, and shared contributor resources.",
+      "status": "PR #7204 merged 29 October 2026 · Evidence Lab UX remains proposed",
+      "url": "https://uxer-janine.github.io/outreachy-2026-claim-verification/",
+      "label": "View my Wikipedia contribution showcase"
+    },
+    {
+      "title": "Fedora Docling & RamaLama",
+      "date": "January–October 2026",
+      "type": "Outreachy contribution work",
+      "summary": "OCR workflows and evaluation using Swahili and French material, documented error analysis, technical writing, and contributor collaboration.",
+      "status": "Documented contribution period ended October 2026",
+      "url": "https://uxer-janine.github.io/outreachy-portfolio/",
+      "label": "View my Fedora contribution showcase"
+    }
+  ],
+  "degrees": [
+    {
+      "title": "Master of Data Science",
+      "institution": "Open University of Kenya",
+      "dates": "January 2026–Present",
+      "status": "In progress"
+    },
+    {
+      "title": "BSc Telecommunications & Information Engineering",
+      "institution": "Jomo Kenyatta University of Agriculture and Technology",
+      "dates": "September 2017–June 2023",
+      "status": "Completed 2023"
+    }
+  ],
+  "training": [
+    {
+      "title": "Data Analyst Track",
+      "institution": "Maven Analytics",
+      "dates": "2026 · ongoing"
+    },
+    {
+      "title": "Data Science Bootcamp",
+      "institution": "Moringa School",
+      "dates": "2025"
+    },
+    {
+      "title": "Cisco Cyber Threat Management",
+      "institution": "USIU",
+      "dates": "2025"
+    },
+    {
+      "title": "Open-Source Software with Responsible AI",
+      "institution": "AFRALTI",
+      "dates": "2024"
+    },
+    {
+      "title": "Women Techsters Fellowship · Product Design",
+      "institution": "Tech4Dev",
+      "dates": "2023–2024"
+    },
+    {
+      "title": "Google UI/UX Design Specialization",
+      "institution": "Coursera",
+      "dates": "2022"
+    }
+  ],
+  "approach": [
+    {
+      "title": "Start by listening",
+      "text": "I ask questions and try to understand people's circumstances before deciding what needs to change."
+    },
+    {
+      "title": "Be clear about the evidence",
+      "text": "I distinguish what I observed, how I interpreted it, and what still needs testing. I want others to be able to follow the reasoning."
+    },
+    {
+      "title": "Keep learning",
+      "text": "Engineering, design, and data give me different ways to investigate a problem. I keep building on those foundations as the work calls for it."
+    },
+    {
+      "title": "Make the work useful",
+      "text": "I value clear interfaces, practical documentation, and accessible explanations that help people find their way and contribute."
+    }
+  ],
+  "cvs": [
+    {
+      "title": "Service & Product Design CV",
+      "description": "Service design, UI/UX, research, agency workflows, and mentorship.",
+      "file": "Assets/CVs/Janine_Makorre_Service_Designer_CV.pdf",
+      "pages": 1
+    },
+    {
+      "title": "Data Science CV",
+      "description": "Data analysis, applied machine learning, technical projects, and engineering experience.",
+      "file": "Assets/CVs/Janine_Makorre_Data_Science_CV_Green_Updated.pdf",
+      "pages": 2
+    }
+  ]
+}

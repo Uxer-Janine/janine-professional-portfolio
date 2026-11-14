@@ -1,0 +1,80 @@
+{
+  "source": "community.html before Phase 3B",
+  "historicalHtml": "<!DOCTYPE html>\n<html lang=\"en\" data-theme=\"dark\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Community & Social Impact — Janine Makorre</title>\n  <meta name=\"description\" content=\"Community initiatives, survivor rehabilitation advocacy, FGM prevention advocacy, and tech mentorship by Janine Robi Makorre.\">\n  <script>try{const t=localStorage.getItem('janine-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch{}</script><link rel=\"stylesheet\" href=\"style.css?v=phase1-review\">\n</head>\n<body>\n\n  <!-- Navigation Header -->\n  <header class=\"site-header\">\n    <div class=\"container nav-container\">\n      <a href=\"index.html\" class=\"logo\">\n        Janine Makorre <span class=\"logo-dot\"></span>\n      </a>\n      \n      <button class=\"menu-toggle\" type=\"button\" aria-label=\"Toggle Navigation\" aria-controls=\"main-navigation\" aria-expanded=\"false\">\n        <span></span>\n        <span></span>\n        <span></span>\n      </button>\n\n      <nav aria-label=\"Main navigation\"><ul class=\"nav-links\" id=\"main-navigation\"><li><a href=\"about.html\">About</a></li><li><a href=\"projects.html\">Work</a></li><li><a href=\"journey.html\">Experience</a></li><li><a href=\"community.html\" class=\"active\" aria-current=\"page\">Community &amp; Impact</a></li><li><a href=\"contact.html\">Contact</a></li><li>\n          <button class=\"theme-btn\" aria-label=\"Toggle Light/Dark Theme\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <circle cx=\"12\" cy=\"12\" r=\"4\"></circle>\n              <path d=\"M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41\"></path>\n            </svg>\n          </button>\n        </li></ul></nav>\n    </div>\n  </header>\n\n  <!-- Page Banner -->\n  <section class=\"section\" style=\"padding-top: 160px; padding-bottom: 60px;\">\n    <div class=\"container\">\n      <span class=\"section-label\">Social Purpose</span>\n      <h1>Community & Impact Work</h1>\n      <p class=\"lead\" style=\"max-width: 680px;\">\n        Applying design thinking, digital tools, and personal commitment to grassroots community advocacy, survivor rehabilitation, and youth mentorship.\n      </p>\n    </div>\n  </section>\n\n  <!-- Community Initiatives Grid -->\n  <section class=\"section\" style=\"padding-top: 20px;\">\n    <div class=\"container\">\n      <div class=\"impact-grid\">\n        \n        <!-- FGM Prevention & Advocacy -->\n        <div class=\"impact-card\">\n          <span style=\"font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-amber); font-weight: 600;\">Advocacy & Human Rights</span>\n          <h3 style=\"font-family: var(--font-sans); font-size: 1.4rem; color: var(--text-primary); margin: 10px 0 12px;\">FGM Prevention & Awareness Initiatives</h3>\n          <p style=\"font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 20px;\">\n            Partnered with local grassroots organizations to develop educational campaigns, digital communication materials, and community outreach strategies aimed at preventing Female Genital Mutilation in vulnerable regions.\n          </p>\n          <div class=\"card-meta\">\n            <span class=\"meta-pill\">Community Outreach</span>\n            <span class=\"meta-pill\">Digital Campaigns</span>\n            <span class=\"meta-pill\">Human Rights</span>\n          </div>\n        </div>\n\n        <!-- Survivor Rehabilitation Networks -->\n        <div class=\"impact-card\">\n          <span style=\"font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-amber); font-weight: 600;\">Support Systems</span>\n          <h3 style=\"font-family: var(--font-sans); font-size: 1.4rem; color: var(--text-primary); margin: 10px 0 12px;\">Survivor Rehabilitation Digital Portals</h3>\n          <p style=\"font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 20px;\">\n            Designed accessible, confidential web platforms and resource centers for survivors, connecting individuals with healthcare support, legal aid, and counseling services.\n          </p>\n          <div class=\"card-meta\">\n            <span class=\"meta-pill\">UX Architecture</span>\n            <span class=\"meta-pill\">Non-Profit Tech</span>\n            <span class=\"meta-pill\">Confidential Systems</span>\n          </div>\n        </div>\n\n        <!-- Non-Profit Organization Websites -->\n        <div class=\"impact-card\">\n          <span style=\"font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-amber); font-weight: 600;\">Pro-Bono Technical Work</span>\n          <h3 style=\"font-family: var(--font-sans); font-size: 1.4rem; color: var(--text-primary); margin: 10px 0 12px;\">Digital Infrastructure for Grassroots CBOs</h3>\n          <p style=\"font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 20px;\">\n            Created responsive, low-bandwidth websites for community-based organizations (CBOs) across Kenya, helping them communicate their mission and secure funding.\n          </p>\n          <div class=\"card-meta\">\n            <span class=\"meta-pill\">Web Development</span>\n            <span class=\"meta-pill\">Accessibility</span>\n            <span class=\"meta-pill\">Pro-Bono</span>\n          </div>\n        </div>\n\n        <!-- Mentorship & Tech Workshops -->\n        <div class=\"impact-card\">\n          <span style=\"font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-amber); font-weight: 600;\">Youth Empowerment</span>\n          <h3 style=\"font-family: var(--font-sans); font-size: 1.4rem; color: var(--text-primary); margin: 10px 0 12px;\">Tech & Data Mentorship for Women</h3>\n          <p style=\"font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 20px;\">\n            Facilitated introductory workshops teaching Python, data analysis fundamentals, and user experience design principles to young women pursuing technical careers.\n          </p>\n          <div class=\"card-meta\">\n            <span class=\"meta-pill\">Mentorship</span>\n            <span class=\"meta-pill\">Women in Tech</span>\n            <span class=\"meta-pill\">Workshops</span>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </section>\n\n  <!-- Photo Gallery Strip -->\n  <section class=\"section\">\n    <div class=\"container\">\n      <div class=\"section-header\">\n        <span class=\"section-label\">Field & Community Work</span>\n        <h2 class=\"section-title\">In the Community</h2>\n      </div>\n\n      <div class=\"photo-strip\">\n        <div class=\"photo-card\">\n          <img src=\"Assets/Images/Janine_Oppia.jpg\" alt=\"Community field research\">\n        </div>\n        <div class=\"photo-card\">\n          <img src=\"Assets/Images/solo.jpg\" alt=\"Janine Makorre portrait\">\n        </div>\n        <div class=\"photo-card\">\n          <img src=\"Assets/Images/Janine_Oppia.jpg\" alt=\"Community engagement workshop\">\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <!-- Footer -->\n  <footer class=\"footer-cta\">\n    <div class=\"container\">\n      <h2 class=\"cta-title\">Want to collaborate on community initiatives?</h2>\n      <a href=\"mailto:janinemakorre@gmail.com\" class=\"btn btn-primary\">Reach Out</a>\n      <div class=\"footer-bottom\">\n        &copy; 2026 Janine Robi Makorre. All rights reserved.\n      </div>\n    </div>\n  </footer>\n\n  <script src=\"components.js?v=phase1\"></script>\n</body>\n</html>\n",
+  "historicalClaims": [
+    {
+      "title": "FGM Prevention & Awareness Initiatives",
+      "status": "Unverified; retained internally, removed from public copy"
+    },
+    {
+      "title": "Survivor Rehabilitation Digital Portals",
+      "status": "Unverified; retained internally, removed from public copy"
+    },
+    {
+      "title": "Digital Infrastructure for Grassroots CBOs",
+      "status": "Unverified; retained internally, removed from public copy"
+    },
+    {
+      "title": "Tech & Data Mentorship for Women",
+      "status": "Unverified; retained internally, removed from public copy"
+    }
+  ],
+  "gallery": [
+    {
+      "source": "Assets/Images/Janine_Oppia.jpg",
+      "status": "Missing file, referenced twice with different descriptions"
+    },
+    {
+      "source": "Assets/Images/solo.jpg",
+      "status": "Portrait; not evidence of community activity"
+    }
+  ],
+  "awaitingConfirmation": [
+    {
+      "initiative": "Oppia community tutoring",
+      "needed": [
+        "Tutoring dates",
+        "Whether sessions continue; do not infer from UX research dates"
+      ]
+    }
+  ],
+  "approvedInitiatives": [
+    {
+      "initiative": "Kuria Girl Child",
+      "source": "Janine’s approved first-person website copy",
+      "status": "Ongoing partnership",
+      "confirmedContributions": [
+        "Website redesign",
+        "Ongoing technical support",
+        "Mentorship",
+        "Oppia learning sessions"
+      ],
+      "caseStudy": {
+        "type": "Figma",
+        "status": "Reserved internally; file pending from Janine",
+        "url": null
+      },
+      "remainingDetails": [
+        "Dates, if Janine wants them displayed"
+      ]
+    },
+    {
+      "initiative": "ChildsLife Kenya",
+      "source": "Janine’s approved first-person website copy",
+      "status": "Ongoing — system redesign in progress",
+      "caseStudy": {
+        "status": "No public case study",
+        "url": null
+      },
+      "intendedImprovements": [
+        "Usability and engagement",
+        "Information capture and organization",
+        "Reporting and donor-facing insights"
+      ],
+      "confidentiality": "No identifiable children, school records, risk assessments, internal dashboards or organizational data to be displayed.",
+      "remainingDetails": [
+        "Dates, if Janine wants them displayed"
+      ]
+    }
+  ]
+}

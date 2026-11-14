@@ -1,0 +1,86 @@
+/* Experience uses the existing typography, amber accents, and theme tokens. */
+.experience-intro { padding: 140px 0 44px; }
+.experience-intro .lead { max-width: 720px; margin-bottom: 30px; }
+.experience-jumps { display: flex; flex-wrap: wrap; gap: 10px; }
+.experience-jumps a { display: inline-flex; align-items: center; gap: 20px; padding: 12px 15px; border: 1px solid var(--border-color); border-radius: 7px; background: var(--bg-surface); color: var(--text-primary); font-size: .82rem; min-height: 44px; }
+.experience-jumps a:hover { border-color: var(--accent-amber); }
+.experience-section { padding: 72px 0; border-top: 1px solid var(--border-color); scroll-margin-top: 20px; }
+.experience-section--surface { background: var(--bg-surface); }
+.exp-section-heading { max-width: 790px; margin-bottom: 38px; }
+.exp-section-heading h2 { font-size: clamp(2.2rem, 3.6vw, 2.9rem); }
+.exp-section-heading p { color: var(--text-secondary); margin-bottom: 0; }
+.career-timeline { list-style: none; margin: 0; padding: 0; }
+.career-entry { display: grid; grid-template-columns: 165px minmax(0, 1fr); gap: 28px; padding-bottom: 40px; scroll-margin-top: 0; }
+.career-entry:last-child { padding-bottom: 0; }
+.career-period { font-size: .8rem; color: var(--text-secondary); line-height: 1.7; padding-top: 2px; }
+.career-current { display: block; color: var(--accent-text); margin-top: 9px; font-size: .73rem; }
+.career-panel { min-width: 0; border-left: 2px solid var(--border-color-hover); padding-left: 28px; }
+.career-panel h3 { font: 500 1.45rem/1.4 var(--font-sans); margin-bottom: 8px; }
+.exp-eyebrow { font-size: .76rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 9px; }
+.career-organization { font-size: 1rem; color: var(--text-primary); margin-bottom: 18px; }
+.career-panel > p:not(.career-organization):not(.exp-eyebrow), .career-responsibilities { color: var(--text-secondary); font-size: .94rem; line-height: 1.8; }
+.career-panel > p, .career-responsibilities, .career-extension p:last-child { max-width: 72ch; }
+.career-panel > p { margin-bottom: 16px; }
+.career-responsibilities { padding-left: 20px; margin: 0 0 18px; }
+.career-responsibilities li + li { margin-top: 8px; }
+.career-extension { margin-top: 24px; padding: 20px 23px; border: 1px solid var(--border-color-hover); border-radius: 8px; background: var(--bg-surface); }
+.career-extension h4 { font: 500 1rem/1.5 var(--font-sans); margin-bottom: 5px; }
+.career-extension .extension-date { color: var(--accent-text); font-size: .8rem; margin-bottom: 12px; }
+.career-extension p:last-child { color: var(--text-secondary); font-size: .9rem; margin-bottom: 0; }
+.career-panel .card-link { font-size: .86rem; line-height: 1.6; min-height: 44px; }
+.mentorship-section { margin-top: 48px; padding-top: 36px; border-top: 1px solid var(--border-color); }
+.mentorship-section > h3, .education-group-title { font: 500 1.25rem/1.5 var(--font-sans); margin-bottom: 14px; }
+.mentorship-intro { color: var(--text-secondary); margin-bottom: 26px; }
+.mentor-grid, .contribution-grid, .degree-grid, .approach-grid, .cv-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
+.mentor-card, .exp-contribution, .degree-card, .approach-card, .cv-card { min-width: 0; padding: 28px; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 10px; }
+.mentor-card h4 { font: 500 1.15rem/1.4 var(--font-sans); margin-bottom: 9px; }
+.mentor-role { font-size: .85rem; color: var(--text-primary); margin-bottom: 14px; }
+.mentor-card p:last-child { color: var(--text-secondary); font-size: .9rem; margin-bottom: 0; }
+.exp-contribution { display: flex; flex-direction: column; background: var(--bg-primary); }
+.exp-contribution h3 { font: 500 1.35rem/1.45 var(--font-sans); margin-bottom: 12px; overflow-wrap: anywhere; }
+.contribution-date { font-size: .8rem; color: var(--text-secondary); margin-bottom: 20px; }
+.exp-contribution > p:not(.exp-eyebrow):not(.contribution-date):not(.contribution-status) { font-size: .93rem; color: var(--text-secondary); }
+.contribution-status { font-size: .8rem; color: var(--text-primary); line-height: 1.7; padding-left: 12px; border-left: 2px solid var(--accent-amber); margin-bottom: 24px; }
+.exp-contribution .card-link { font-size: .84rem; line-height: 1.7; display: inline; margin-top: auto; padding-block: 10px; }
+.exp-section-link { margin-top: 26px; margin-bottom: 0; font-size: .87rem; }
+.degree-card h4 { font: 500 1.2rem/1.45 var(--font-sans); margin-bottom: 15px; }
+.degree-card > p { font-size: .92rem; color: var(--text-secondary); margin-bottom: 12px; }
+.degree-card .education-date { font-size: .8rem; margin-bottom: 0; }
+.degree-card .exp-eyebrow { color: var(--accent-text); font-size: .75rem; }
+.education-group-title:not(:first-child) { margin-top: 32px; }
+.training-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; }
+.training-list li { display: flex; justify-content: space-between; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--border-color); }
+.training-list li > div { min-width: 0; }
+.training-list h4 { font: 500 .93rem/1.6 var(--font-sans); margin-bottom: 5px; }
+.training-list p { font-size: .82rem; color: var(--text-secondary); margin-bottom: 0; }
+.training-date { font-size: .78rem; color: var(--text-secondary); flex-shrink: 0; padding-top: 3px; }
+.approach-card { background: var(--bg-primary); }
+.approach-card h3 { font: 500 1.1rem/1.5 var(--font-sans); margin-bottom: 12px; }
+.approach-card p { color: var(--text-secondary); font-size: .93rem; margin-bottom: 0; }
+.cv-card { display: flex; flex-direction: column; }
+.cv-card h3 { font: 500 1.4rem/1.4 var(--font-sans); margin-bottom: 16px; }
+.cv-card > p:not(.exp-eyebrow) { color: var(--text-secondary); font-size: .93rem; }
+.cv-card .btn { margin-top: auto; align-self: flex-start; font-size: .84rem; line-height: 1.6; }
+@media (max-width: 900px) {
+  .career-entry { grid-template-columns: 140px minmax(0, 1fr); gap: 20px; }
+  .career-panel { padding-left: 22px; }
+  .training-list { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .experience-intro { padding: 116px 0 36px; }
+  .experience-jumps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .experience-jumps a { justify-content: space-between; gap: 8px; font-size: .76rem; padding: 12px; }
+  .experience-section { padding: 50px 0; }
+  .exp-section-heading { margin-bottom: 30px; }
+  .career-entry { grid-template-columns: minmax(0, 1fr); gap: 14px; padding-bottom: 36px; }
+  .career-period { padding: 0 0 0 18px; }
+  .career-current { display: inline; margin-left: 12px; }
+  .career-panel { padding-left: 18px; }
+  .career-panel h3 { font-size: 1.3rem; }
+  .career-extension { padding: 17px; }
+  .mentor-grid, .contribution-grid, .degree-grid, .approach-grid, .cv-grid { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .mentor-card, .exp-contribution, .degree-card, .approach-card, .cv-card { padding: 24px; }
+  .training-list li { gap: 12px; }
+  .training-date { flex-shrink: 1; text-align: right; min-width: 65px; }
+  .cv-card .btn { width: 100%; justify-content: center; }
+}

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Articles & Writing — Janine Makorre</title>
   <meta name="description" content="Articles and technical writings on UX Research, Service Design, and Data Science by Janine Robi Makorre.">
-  <link rel="stylesheet" href="style.css">
+  <script>try{const t=localStorage.getItem('janine-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch{}</script><link rel="stylesheet" href="style.css?v=phase1-review">
 </head>
 <body>
 
@@ -16,27 +16,20 @@
         Janine Makorre <span class="logo-dot"></span>
       </a>
       
-      <button class="menu-toggle" aria-label="Toggle Navigation">
+      <button class="menu-toggle" type="button" aria-label="Toggle Navigation" aria-controls="main-navigation" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <ul class="nav-links">
-        <li><a href="projects.html">Work</a></li>
-        <li><a href="journey.html">Experience</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li>
+      <nav aria-label="Main navigation"><ul class="nav-links" id="main-navigation"><li><a href="about.html">About</a></li><li><a href="projects.html">Work</a></li><li><a href="journey.html">Experience</a></li><li><a href="community.html">Community &amp; Impact</a></li><li><a href="contact.html">Contact</a></li><li>
           <button class="theme-btn" aria-label="Toggle Light/Dark Theme">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="4"></circle>
               <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
             </svg>
           </button>
-        </li>
-      </ul>
+        </li></ul></nav>
     </div>
   </header>
 
@@ -107,6 +100,6 @@
     </div>
   </footer>
 
-  <script src="components.js"></script>
+  <script src="components.js?v=phase1"></script>
 </body>
 </html>

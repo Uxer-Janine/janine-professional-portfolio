@@ -1,258 +1,732 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Janine Makorre — Designer & Data Scientist</title>
-  <meta name="description" content="Portfolio of Janine Robi Makorre — Product Designer, Service Designer, and Data Scientist working at the intersection of People, Systems, and Data.">
-  <link rel="stylesheet" href="style.css">
+  <title>Janine Robi Makorre — Designer &amp; Technologist</title>
+  <meta name="description" content="Janine Robi Makorre is a multidisciplinary designer and technologist working across service design, product design, user research, data analysis, and open source.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://uxer-janine.github.io/janine-professional-portfolio/">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=content-refinement-v4">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Janine Robi Makorre">
+  <meta property="og:title" content="Janine Robi Makorre — Designer &amp; Technologist">
+  <meta property="og:description" content="Designing human-centred services and products informed by engineering, data, and community advocacy in Kuria, Kenya.">
+  <meta property="og:url" content="https://uxer-janine.github.io/janine-professional-portfolio/">
+  <meta property="og:image" content="https://uxer-janine.github.io/janine-professional-portfolio/Assets/Images/solo.jpg">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <!-- Navigation -->
-  <header class="site-header">
-    <div class="container nav-container">
-      <a href="index.html" class="logo">
-        Janine Makorre <span class="logo-dot"></span>
+  <!-- ==========================================================================
+       Navigation Bar (Home → Work → Community & Roots → About → Writing → CV + Contact CTA)
+       ========================================================================== -->
+  <header class="site-header" id="top">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="Janine Robi Makorre — Home">
+        Janine Makorre<span class="brand-dot">.</span>
       </a>
-      
-      <button class="menu-toggle" aria-label="Toggle Navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
 
-      <ul class="nav-links">
-        <li><a href="projects.html">Work</a></li>
-        <li><a href="journey.html">Experience</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li>
-          <button class="theme-btn" aria-label="Toggle Light/Dark Theme">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="4"></circle>
-              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
-            </svg>
-          </button>
-        </li>
-      </ul>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#top" class="active">Home</a></li>
+          <li><a href="projects.html">Work</a></li>
+          <li><a href="#community">Community &amp; Roots</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#experience">CV</a></li>
+          <li><a href="#contact" class="nav-cta-btn">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
     </div>
   </header>
 
-  <!-- Viewport 1: Hero Experience -->
-  <section class="hero-section">
-    <div class="container hero-layout">
-      <div class="hero-text">
-        <span class="positioning-tag">People × Systems × Data</span>
-        <h1 class="hero-title">
-          Designing human experiences. <br>
-          <span class="serif-accent">Building the systems and data behind them.</span>
-        </h1>
-        <p class="hero-intro">
-          I am <strong>Janine Robi Makorre</strong> — a Product Designer & Data Scientist based in Kenya. 
-          I began by understanding human behavior and service journeys, expanding into the data architectures and machine learning systems that power modern digital services.
-        </p>
-        <div class="hero-actions">
-          <a href="#selected-work" class="btn btn-primary">Selected Work ↓</a>
-          <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
-        </div>
-      </div>
+  <main id="main">
 
-      <div class="hero-photo-wrapper">
-        <img src="Assets/Images/solo.jpg" alt="Janine Robi Makorre Portrait">
-      </div>
-    </div>
-  </section>
-
-  <!-- Viewport 2: Narrative Bridge -->
-  <section class="bridge-section">
-    <div class="container">
-      <div class="bridge-content">
-        <h2 class="bridge-quote">
-          "Great products start with deep empathy for <span>people</span>, express themselves through elegant <span>systems</span>, and scale through intelligent <span>data</span>."
-        </h2>
-        <p>
-          My work doesn't treat design and data science as separate careers. Instead, it reflects an organic progression: from mapping human service journeys to extracting actionable intelligence from raw databases and building production-grade ML models.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Viewport 3: Selected Work (Level 1 Case Studies) -->
-  <section id="selected-work" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Selected Projects</span>
-        <h2 class="section-title">Curated Work Across Disciplines</h2>
-        <p>Featured projects demonstrating end-to-end capability across Service Design, Data Science, Research, and Machine Learning.</p>
-      </div>
-
-      <div class="featured-grid">
+    <!-- ==========================================================================
+         01 — Introduction
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
         
-        <!-- Project 1: eCitizen (The Bridge Project - Wide Card) -->
-        <article class="featured-card wide-card">
-          <div>
-            <span class="card-tag">Service Design → Data & Analytics</span>
-            <h3 class="card-title">eCitizen National Digital Platform</h3>
-            <p class="card-desc">
-              Examined Kenya's flagship public service portal. Conducted end-to-end citizen service journey mapping, usability evaluations, and analyzed transaction analytics to streamline public service accessibility.
-            </p>
-            <div class="card-meta">
-              <span class="meta-pill">Service Design</span>
-              <span class="meta-pill">Data Analytics</span>
-              <span class="meta-pill">Public Sector</span>
-            </div>
-            <a href="journey.html#ecitizen" class="card-link">Read Bridge Case Study →</a>
-          </div>
-          <div class="photo-card" style="aspect-ratio: 16/10;">
-            <img src="Assets/Images/Janine_Oppia.jpg" alt="eCitizen research and service mapping">
-          </div>
-        </article>
+        <!-- Left Column -->
+        <div class="hero-content">
+          <span class="section-eyebrow">Service &amp; Product Design · Engineering &amp; Data</span>
 
-        <!-- Project 2: Oppia Foundation (UX Research) -->
-        <article class="featured-card">
-          <div>
-            <span class="card-tag">User Research & UX</span>
-            <h3 class="card-title">Oppia Usability Research</h3>
-            <p class="card-desc">
-              Led field usability research and interface testing for Oppia’s mobile learning platform, improving lesson accessibility for underserved students.
-            </p>
-            <div class="card-meta">
-              <span class="meta-pill">UX Research</span>
-              <span class="meta-pill">Field Testing</span>
-              <span class="meta-pill">Education</span>
-            </div>
-          </div>
-          <a href="projects.html#oppia" class="card-link">Explore Field Research →</a>
-        </article>
+          <h1 class="hero-headline">
+            Thoughtful services.<br>
+            Digital products.<br>
+            <em>People at the centre.</em>
+          </h1>
 
-        <!-- Project 3: Financial Guardian AI (Data Science / AI) -->
-        <article class="featured-card">
-          <div>
-            <span class="card-tag">Data Science & AI</span>
-            <h3 class="card-title">Financial Guardian AI</h3>
-            <p class="card-desc">
-              Built an intelligent machine learning pipeline for real-time transaction anomaly detection and risk scoring across mobile payment ecosystems.
-            </p>
-            <div class="card-meta">
-              <span class="meta-pill">Python</span>
-              <span class="meta-pill">Scikit-Learn</span>
-              <span class="meta-pill">FinTech</span>
-            </div>
-          </div>
-          <a href="projects.html#financial-guardian" class="card-link">View ML Architecture →</a>
-        </article>
+          <p class="hero-intro-text">
+            Hi, I'm Janine. I'm a Service and Product Designer with an engineering foundation and a deep interest in data.
+          </p>
 
-        <!-- Project 4: Outreachy / Docling OCR (Open Source / ML) -->
-        <article class="featured-card">
-          <div>
-            <span class="card-tag">Open Source & ML</span>
-            <h3 class="card-title">Docling OCR & Document Intelligence</h3>
-            <p class="card-desc">
-              Contributed to open-source document parsing libraries, building OCR processing pipelines and structured text extraction models.
-            </p>
-            <div class="card-meta">
-              <span class="meta-pill">Python</span>
-              <span class="meta-pill">Docling</span>
-              <span class="meta-pill">OCR / ML</span>
-            </div>
-          </div>
-          <a href="project-ramalama.html" class="card-link">View Open Source Work →</a>
-        </article>
+          <p class="hero-intro-text" style="margin-top: -6px; margin-bottom: 22px;">
+            Design helps me understand what people actually need. Engineering and data help me make sure what we build is practical, reliable, and holds up in the real world.
+          </p>
 
-        <!-- Project 5: Renewable Energy Forecasting (Data Engineering) -->
-        <article class="featured-card">
-          <div>
-            <span class="card-tag">Data Science & Forecasting</span>
-            <h3 class="card-title">Renewable Energy Forecasting</h3>
-            <p class="card-desc">
-              Developed time-series forecasting models (ARIMA / Prophet) to predict grid power load and solar yield generation curves in East Africa.
-            </p>
-            <div class="card-meta">
-              <span class="meta-pill">Time Series</span>
-              <span class="meta-pill">Data Pipeline</span>
-              <span class="meta-pill">Energy</span>
+          <!-- Verified Platform Icons Row (Preserving her beloved icons) -->
+          <div class="hero-icon-row" aria-label="Professional profiles and contact">
+            <a href="https://github.com/Uxer-Janine" target="_blank" rel="noopener noreferrer" class="hero-icon-pill" title="GitHub" aria-label="GitHub Profile">
+              <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>
+            </a>
+            <a href="https://www.behance.net/janinemakorre" target="_blank" rel="noopener noreferrer" class="hero-icon-pill" title="Behance" aria-label="Behance Portfolio">
+              <svg viewBox="0 0 16 16"><path d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391s.497.426.641.747c.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922s.461.957.461 1.563c0 .496-.105.922-.285 1.278a2.3 2.3 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.3 5.3 0 0 1-1.278.176L0 12.803V3zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a1 1 0 0 0-.32-.355 1.8 1.8 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305zm6.858-.035q.428.427 1.278.426c.39 0 .746-.106 1.032-.286q.426-.32.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.1 4.1 0 0 1-1.527-.285 2.8 2.8 0 0 1-1.137-.782 2.85 2.85 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4 4 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396m2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176s-.356.25-.496.39a.96.96 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978z"/></svg>
+            </a>
+            <a href="https://dribbble.com/Janine_Robi" target="_blank" rel="noopener noreferrer" class="hero-icon-pill" title="Dribbble" aria-label="Dribbble Explorations">
+              <svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8m5.284 3.688a6.8 6.8 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.697zm-6.32 1.344c.426.832.815 1.699 1.144 2.583-.243.07-.485.156-.736.234-2.585.807-4.962.876-5.326.885a6.84 6.84 0 0 1 .945-3.044c.32.147 2.055.858 3.973-.658M8 1.392c1.777 0 3.39.694 4.588 1.832-.19.234-1.334 1.639-3.763 2.617-.373-.789-.78-1.56-1.17-2.28-.46-.849-.91-1.586-1.127-1.928.477-.165.988-.24 1.472-.24M1.392 8.444v-.444c0-2.116.97-4.008 2.498-5.264.19.32.615.997 1.057 1.804.382.702.772 1.447 1.136 2.21-.018.008-.035.017-.052.025-2.28 1.058-4.47 1.258-4.639 1.269m1.232 2.081c.295-.008 2.271-.095 4.398-.824.234-.078.468-.165.702-.252.329.893.615 1.812.84 2.748-.052.018-.112.026-.164.044-1.986.728-3.695.234-3.877.173a6.8 6.8 0 0 1-1.9-1.89m6.415 4.083c-.225-.867-.494-1.725-.797-2.558 2.124-.763 4.214-.373 4.448-.329a6.83 6.83 0 0 1-3.651 2.887"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/janine-makorre-30a456179/" target="_blank" rel="noopener noreferrer" class="hero-icon-pill" title="LinkedIn" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
+            </a>
+            <a href="https://medium.com/@janinemakorre" target="_blank" rel="noopener noreferrer" class="hero-icon-pill" title="Medium" aria-label="Medium Writing">
+              <svg viewBox="0 0 16 16"><path d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.5 4.5 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.5 4.5 0 0 1 9.025 8m5.249 0c0 2.346-.91 4.248-2.033 4.248s-2.034-1.902-2.034-4.248c0-2.345.91-4.248 2.034-4.248s2.033 1.903 2.033 4.248M16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795"/></svg>
+            </a>
+            <a href="mailto:janinemakorre@gmail.com" class="hero-icon-pill" title="Email Janine" aria-label="Email Janine">
+              <svg viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg>
+            </a>
+            <a href="Assets/CVs/Janine_Makorre_Service_Designer_CV.pdf" download="Janine_Makorre_Service_Designer_CV.pdf" class="hero-icon-pill" title="Download CV" aria-label="Download CV">
+              <svg viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/></svg>
+            </a>
+          </div>
+
+          <div class="hero-actions-row">
+            <a href="#featured-work" class="btn btn-burgundy">
+              Explore my work ↗
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Let's collaborate →
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column (Portrait Arch with Inner Pill) -->
+        <div class="hero-visual">
+          <div class="portrait-frame-container">
+            <div class="portrait-photo-arch">
+              <img class="portrait-img" src="Assets/Images/solo.jpg" alt="Janine Robi Makorre" fetchpriority="high">
+              <div class="photo-inner-pill">
+                <span>✳</span> People. Systems. Possibilities.
+              </div>
             </div>
           </div>
-          <a href="projects.html#energy-forecasting" class="card-link">View Forecasting Model →</a>
-        </article>
+        </div>
 
       </div>
+    </section>
 
-      <!-- Archive Gateway CTA -->
-      <div class="archive-gateway">
-        <h3>Looking for specific technical repos or design archives?</h3>
-        <p style="margin-bottom: 24px;">Explore my complete work catalog containing 20+ projects filterable by discipline, stack, and year.</p>
-        <a href="projects.html" class="btn btn-secondary">Explore The Full Archive →</a>
+    <!-- Hero Ribbon Bar -->
+    <div class="hero-ribbon-section">
+      <div class="container">
+        <div class="hero-ribbon-bar">
+          <div class="hero-ribbon-item">
+            <span class="ribbon-icon">◎</span>
+            <span>Human-centred<br>research &amp; design</span>
+          </div>
+          <div class="hero-ribbon-item">
+            <span class="ribbon-icon">↗</span>
+            <span>Data-informed<br>decisions</span>
+          </div>
+          <div class="hero-ribbon-item">
+            <span class="ribbon-icon">&lt;/&gt;</span>
+            <span>Open-source<br>contributions</span>
+          </div>
+          <div class="hero-ribbon-item">
+            <span class="ribbon-icon">✳</span>
+            <span>Education &amp;<br>community work</span>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
 
-  <!-- Viewport 4: Experience Accumulation Preview -->
-  <section class="section">
+    <!-- ==========================================================================
+         02 — Selected Work (Immediate Visual Proof of Capabilities)
+         ========================================================================== -->
+    <section class="featured-work-section" id="featured-work">
+      <div class="container">
+        
+        <div class="featured-header-row">
+          <h2 class="section-title-large" style="margin-bottom: 0;">Selected Work</h2>
+          <a href="projects.html" class="btn btn-burgundy btn-sm">
+            Explore all projects in Work →
+          </a>
+        </div>
+
+        <div class="featured-grid">
+          
+          <!-- Card 1: Kuria Girl Child (Real Behance Mockup) -->
+          <article class="featured-card">
+            <div class="featured-card-media" style="background: radial-gradient(circle at 50% 100%, #FCE4EC 0%, #FFF0F5 100%);">
+              <div class="mockup-browser">
+                <div class="browser-header-bar">
+                  <div class="browser-dots">
+                    <span class="browser-dot dot-red"></span>
+                    <span class="browser-dot dot-yellow"></span>
+                    <span class="browser-dot dot-green"></span>
+                  </div>
+                  <div class="browser-url-pill">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    kuriagirlchild.org
+                  </div>
+                </div>
+                <div class="browser-viewport">
+                  <img src="Assets/Work/kuria-girl-child.png" alt="Kuria Girl Child Development Center website mockup" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="featured-card-body">
+              <div style="margin-bottom: 10px;">
+                <span class="tag tag-blush">Community Platform · Web Design</span>
+              </div>
+              <h3 class="featured-card-title">Kuria Girl Child Development Center</h3>
+              <p class="featured-card-desc">
+                A digital presence created to share grassroots anti-FGM stories with dignity, connect with global partners, and support digital literacy workshops for local girls.
+              </p>
+              <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                <a href="https://www.behance.net/gallery/258432907/Kuria-Girl-Child-Development-Center" target="_blank" rel="noopener noreferrer" class="featured-card-link">
+                  View on Behance ↗
+                </a>
+                <a href="https://www.figma.com/proto/1Fd84KXbZjXbUm2M1kWxUU/Kuria-Girl-Child-Development-Center?node-id=173-3837&amp;page-id=1%3A6&amp;starting-point-node-id=173%3A3573&amp;t=J3QMmxh1ui96ADep-1" target="_blank" rel="noopener noreferrer" class="featured-card-link" style="color: var(--accent-raspberry);">
+                  Figma prototype ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Oppia Foundation (MacBook Mockup) -->
+          <article class="featured-card">
+            <div class="featured-card-media" style="background: radial-gradient(circle at 50% 100%, #FFE8D6 0%, #FFF5ED 100%);">
+              <div class="mockup-laptop">
+                <div class="laptop-lid">
+                  <div class="laptop-camera-dot"></div>
+                  <div class="laptop-screen">
+                    <img src="Assets/Work/oppia-topic-page.png" alt="Oppia Place Values interface evaluated in research" loading="lazy">
+                  </div>
+                </div>
+                <div class="laptop-base">
+                  <div class="laptop-base-notch"></div>
+                </div>
+              </div>
+            </div>
+            <div class="featured-card-body">
+              <div style="margin-bottom: 10px;">
+                <span class="tag tag-peach">EdTech · UX Research</span>
+              </div>
+              <h3 class="featured-card-title">Oppia Foundation — Learning Research</h3>
+              <p class="featured-card-desc">
+                Observing how primary students explore interactive lessons on laptops, simplifying dashboard navigation cues, and localizing mathematics lessons into Swahili.
+              </p>
+              <a href="https://uxer-janine.github.io/oppia-project-showcase/" target="_blank" rel="noopener noreferrer" class="featured-card-link">
+                Read case study ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: Wikipedia Claim Verification (Real Behance Mockup) -->
+          <article class="featured-card">
+            <div class="featured-card-media" style="background: radial-gradient(circle at 50% 100%, #E8EBF5 0%, #F4F6FC 100%);">
+              <div class="mockup-browser">
+                <div class="browser-header-bar">
+                  <div class="browser-dots">
+                    <span class="browser-dot dot-red"></span>
+                    <span class="browser-dot dot-yellow"></span>
+                    <span class="browser-dot dot-green"></span>
+                  </div>
+                  <div class="browser-url-pill">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    outreachy.wikiedu.org/evidence-lab
+                  </div>
+                </div>
+                <div class="browser-viewport">
+                  <img src="Assets/Work/wikipedia-claim-verification.png" alt="Wikipedia Evidence Lab claim verification interface proposal" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="featured-card-body">
+              <div style="margin-bottom: 10px;">
+                <span class="tag tag-navy">Open Source Design · React PR</span>
+              </div>
+              <h3 class="featured-card-title">Wikipedia Claim Verification</h3>
+              <p class="featured-card-desc">
+                A guided interface helping student editors verify claims against source citations, paired with code contributions merged directly into the platform's repository.
+              </p>
+              <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                <a href="https://www.behance.net/gallery/258413267/Wikipedia-Claim-source-verfification-UX" target="_blank" rel="noopener noreferrer" class="featured-card-link">
+                  View on Behance ↗
+                </a>
+                <a href="https://uxer-janine.github.io/outreachy-2026-claim-verification/" target="_blank" rel="noopener noreferrer" class="featured-card-link" style="color: var(--accent-raspberry);">
+                  Live showcase ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         03 — Community & Roots (Why the Work Matters)
+         ========================================================================== -->
+    <section class="community-section" id="community" style="scroll-margin-top: 80px;">
+      <div class="container">
+        
+        <!-- Community & Impact Split Component -->
+        <div class="community-split-card">
+          <!-- Left Column -->
+          <div class="community-split-left">
+            <span class="community-eyebrow-tag">Personal Roots &amp; Purpose</span>
+            <h2 class="community-split-title">
+              Community<br><em>&amp; Roots</em>
+            </h2>
+            <p class="community-split-p">
+              Growing up in Kuria, Kenya shaped how I see technology and access. I use design, data, and community organizing to create practical opportunities for young people, especially girls.
+            </p>
+          </div>
+
+          <!-- Right Column (3 Interactive Icon Rows) -->
+          <div class="community-split-right">
+            
+            <!-- Row 1: Open source & technical contributions -->
+            <div class="impact-row-item">
+              <div class="impact-logo-card">
+                <img src="Assets/Icons/wikimedia.svg" alt="Wikimedia Foundation" width="28" height="28">
+              </div>
+              <div class="impact-item-text">
+                <h3 class="impact-item-title">Open source contributions</h3>
+                <p class="impact-item-desc">
+                  Merged Wiki Education code, verification resources, and multilingual OCR documentation.
+                </p>
+                <div class="impact-item-links">
+                  <a href="#open-source" class="impact-link">
+                    Explore contributions ↓
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 2: Mentorship & knowledge sharing -->
+            <div class="impact-row-item">
+              <div class="impact-logo-card">
+                <img src="Assets/Icons/vumbua.svg" alt="Vumbua Tech" width="30" height="30">
+              </div>
+              <div class="impact-item-text">
+                <h3 class="impact-item-title">Mentorship &amp; education</h3>
+                <p class="impact-item-desc">
+                  Teaching human-centred design at Vumbua Tech and mentoring junior product designers.
+                </p>
+                <div class="impact-item-links">
+                  <a href="#community-story" class="impact-link">
+                    Read outreach story →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 3: Design for social impact -->
+            <div class="impact-row-item">
+              <div class="impact-logo-card">
+                <img src="Assets/Icons/childslife.svg" alt="ChildsLife Kenya" width="38" height="22">
+              </div>
+              <div class="impact-item-text">
+                <h3 class="impact-item-title">Design for social impact</h3>
+                <p class="impact-item-desc">
+                  Digital systems and outreach support with Kuria Girl Child and ChildsLife Kenya.
+                </p>
+                <div class="impact-item-links">
+                  <a href="#community-story" class="impact-link">
+                    Read community initiatives →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- The Community Story & Grassroots Initiatives -->
+        <div id="community-story" style="scroll-margin-top: 100px;">
+          <div style="max-width: 760px; margin: 0 auto 36px; text-align: center;">
+            <span class="section-eyebrow">Personal Roots · Kuria, Kenya</span>
+            <h3 style="font-size: 2.1rem; font-family: var(--font-serif); color: var(--text-navy); margin-bottom: 14px;">
+              Dismantling barriers and keeping girls in school
+            </h3>
+            <p style="font-size: 1.05rem; color: var(--text-body); line-height: 1.8;">
+              I was born and raised in Kuria, Kenya—a community where Female Genital Mutilation (FGM), early forced marriage, and educational dropouts are daily realities. Early on, I committed to standing against these practices. Today, I combine community advocacy with service design and field data—helping organizations track interventions, improve digital systems, and provide girls with safe, sustainable pathways to education.
+            </p>
+          </div>
+
+          <!-- Initiatives Grid -->
+          <div class="community-cards-grid">
+            <div class="comm-card">
+              <div>
+                <span class="tag tag-blush" style="margin-bottom: 12px;">Active Project · Kuria</span>
+                <h4 class="comm-card-title">ChildsLife Kenya — System Revamp</h4>
+                <p class="comm-card-desc">
+                  Redesigning the reporting and outreach tools used by field officers in Kuria to record student attendance, track at-risk girls, and produce donor reports measuring anti-FGM impact.
+                </p>
+              </div>
+              <div>
+                <span class="tag tag-peach">Service Design &amp; Reporting</span>
+              </div>
+            </div>
+
+            <div class="comm-card">
+              <div>
+                <span class="tag tag-blush" style="margin-bottom: 12px;">Rural School Outreach</span>
+                <h4 class="comm-card-title">School Visits &amp; Rights Sensitization</h4>
+                <p class="comm-card-desc">
+                  Visiting primary and secondary schools across Kuria with community partners to conduct participatory sessions on bodily autonomy, recognizing personal risk, and staying enrolled.
+                </p>
+              </div>
+              <div>
+                <span class="tag tag-navy">Rights Outreach</span>
+              </div>
+            </div>
+
+            <div class="comm-card">
+              <div>
+                <span class="tag tag-blush" style="margin-bottom: 12px;">Volunteer Mentorship</span>
+                <h4 class="comm-card-title">Technology &amp; Design Mentorship</h4>
+                <p class="comm-card-desc">
+                  Introduced high-school students to human-centred design at Vumbua Tech (2023–2024), and mentored junior product designers through wireframes, user testing, and portfolio reviews at Mingling Trends (2024–2025).
+                </p>
+              </div>
+              <div>
+                <span class="tag tag-peach">Volunteer Mentorship</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==========================================================================
+             04 — Open Source (Distinct Subsection within Community & Roots)
+             ========================================================================== -->
+        <div id="open-source" style="margin-top: 64px; padding-top: 52px; border-top: 1px solid rgba(143, 23, 72, 0.12); scroll-margin-top: 90px;">
+          <div style="max-width: 760px; margin: 0 auto 36px; text-align: center;">
+            <span class="section-eyebrow">Open Source</span>
+            <h3 style="font-size: 2rem; font-family: var(--font-serif); color: var(--text-navy); margin-bottom: 12px;">
+              Contributing in the open
+            </h3>
+            <p style="font-size: 1.05rem; color: var(--text-body); line-height: 1.75;">
+              I believe open tools and transparent knowledge create opportunity. My open-source work combines user research with production code contributions and developer documentation.
+            </p>
+          </div>
+
+          <div class="community-cards-grid" style="grid-template-columns: repeat(2, 1fr);">
+            <!-- Open Source Card 1 -->
+            <div class="comm-card">
+              <div>
+                <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+                  <span class="tag tag-peach">Wiki Education</span>
+                  <span class="tag tag-navy">React PR Merged</span>
+                </div>
+                <h4 class="comm-card-title">Wiki Education Dashboard</h4>
+                <p class="comm-card-desc">
+                  Designed Evidence Lab—a guided verification experience helping student editors evaluate claims against cited sources. Alongside the UX, contributed upstream code to the production React codebase fixing date picker boundaries in a merged pull request.
+                </p>
+              </div>
+              <div style="display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap;">
+                <a href="https://github.com/WikiEducationFoundation/WikiEduDashboard/pull/7204" target="_blank" rel="noopener noreferrer" class="featured-card-link">
+                  Merged PR #7204 ↗
+                </a>
+                <a href="https://uxer-janine.github.io/outreachy-2026-claim-verification/" target="_blank" rel="noopener noreferrer" class="featured-card-link" style="color: var(--accent-raspberry);">
+                  Evidence Lab Showcase ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Open Source Card 2 -->
+            <div class="comm-card">
+              <div>
+                <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+                  <span class="tag tag-blush">Fedora Project</span>
+                  <span class="tag tag-peach">Docling &amp; RamaLama</span>
+                </div>
+                <h4 class="comm-card-title">Multilingual OCR Evaluation</h4>
+                <p class="comm-card-desc">
+                  Benchmarked OCR engines (Tesseract, EasyOCR, RapidOCR) on Swahili and French materials to document error patterns and layout retention. Authored step-by-step developer setup guides for the Fedora and RamaLama communities.
+                </p>
+              </div>
+              <div style="display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap;">
+                <a href="https://github.com/Uxer-Janine/outreachy-docling-task" target="_blank" rel="noopener noreferrer" class="featured-card-link">
+                  GitHub Repository ↗
+                </a>
+                <a href="https://uxer-janine.github.io/outreachy-portfolio/" target="_blank" rel="noopener noreferrer" class="featured-card-link" style="color: var(--accent-raspberry);">
+                  Documentation Showcase ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         05 — About & My Foundation (The Person Behind the Work)
+         ========================================================================== -->
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">Career Progression</span>
-        <h2 class="section-title">Accumulated Capabilities</h2>
-        <p>A continuous expansion of tools and methods rather than a career restart.</p>
-      </div>
-
-      <div class="experience-timeline">
-        <div class="timeline-node highlight">
-          <span class="node-date">2024 — Present</span>
-          <h3 class="node-role">MSc in Data Science & AI Candidate</h3>
-          <p class="node-org">Advanced Statistical Modeling, Machine Learning Architecture, Deep Learning</p>
-          <p>Deepening technical foundations in probabilistic modeling, natural language processing, and scalable data pipelines.</p>
-        </div>
-
-        <div class="timeline-node highlight">
-          <span class="node-date">2024</span>
-          <h3 class="node-role">Open Source ML & Docs Contributor — Outreachy</h3>
-          <p class="node-org">Ramalama Docs & Docling Project</p>
-          <p>Engineered technical documentation, developer workflows, and OCR models for global open-source communities.</p>
-        </div>
-
-        <div class="timeline-node">
-          <span class="node-date">2023 — 2024</span>
-          <h3 class="node-role">Service Designer & Data Analyst — eCitizen Initiative</h3>
-          <p class="node-org">Public Sector Experience & Analytics</p>
-          <p>Transformed citizen touchpoints while bridging operational service logs with transactional analytics dashboards.</p>
-        </div>
-      </div>
-
-      <div style="text-align: center; margin-top: 40px;">
-        <a href="journey.html" class="btn btn-secondary">View Complete Experience & Education →</a>
+      <div class="toolkit-bar">
+        <span class="toolkit-label">My toolkit</span>
+        <span class="toolkit-pill">Service design</span>
+        <span class="toolkit-pill">UX research</span>
+        <span class="toolkit-pill">Data analysis</span>
+        <span class="toolkit-pill">Open source</span>
+        <span class="toolkit-pill">Systems thinking</span>
       </div>
     </div>
-  </section>
 
-  <!-- Viewport 5: Human Contact Footer -->
-  <footer class="footer-cta">
-    <div class="container">
-      <h2 class="cta-title">Have an interesting problem? Let's talk.</h2>
-      <p class="cta-desc">
-        Whether you are looking for product design leadership, service architecture, or data science collaboration — I'd love to hear from you.
-      </p>
+    <section class="about-editorial-section" id="about">
+      <div class="container about-intro-grid">
+        <div class="about-copy">
+          <span class="section-eyebrow">ABOUT ME</span>
+          <h2 class="section-title-large">
+            The person<br>
+            <em>behind the work.</em>
+          </h2>
+          <p>
+            I'm a designer with an engineering foundation in telecommunications and a growing specialisation in data science.
+          </p>
+          <p>
+            I care about how people experience systems in the real world. Research helps me understand their needs, and data helps me test whether a solution works at scale.
+          </p>
 
-      <a href="mailto:janinerobi@gmail.com" class="btn btn-primary" style="font-size: 1.05rem; padding: 14px 32px;">
-        janinerobi@gmail.com
-      </a>
+          <div class="philosophy-quote-card">
+            <span class="quote-card-eyebrow">MY PHILOSOPHY</span>
+            <p class="quote-card-text">
+              “I design with people.<br>
+              <em>Build with data.”</em>
+            </p>
+          </div>
+        </div>
 
-      <div class="social-links">
-        <a href="https://github.com/Uxer-Janine" target="_blank" class="social-link">GitHub</a>
-        <a href="https://linkedin.com/in/janine-robi" target="_blank" class="social-link">LinkedIn</a>
-        <a href="https://behance.net/janinerobi" target="_blank" class="social-link">Behance</a>
-        <a href="https://dribbble.com/janinerobi" target="_blank" class="social-link">Dribbble</a>
-        <a href="https://medium.com/@janinemakorre" target="_blank" class="social-link">Medium</a>
+        <div class="about-photo-wrapper">
+          <img src="Assets/Images/with-my-parents.jpeg" alt="Janine in graduation gown with her mother and father" class="about-parents-img" loading="lazy">
+          <span class="caption-text">With my parents.</span>
+        </div>
       </div>
 
-      <div class="footer-bottom">
-        &copy; 2026 Janine Robi Makorre. Designed with restraint, clarity, and precision.
+      <!-- Family Foundation Row -->
+      <div class="container family-foundation-grid">
+        <div class="family-photo-wrapper">
+          <img src="Assets/Images/family.jpg" alt="Janine with her family celebrating graduation" class="family-portrait-img" loading="lazy">
+          <span class="caption-text">With my family.</span>
+        </div>
+
+        <div class="foundation-copy">
+          <span class="section-eyebrow">MY FOUNDATION</span>
+          <h2 class="section-title-large">
+            The people who<br>
+            keep me grounded.
+          </h2>
+          <p>
+            My family has been a constant source of encouragement and support. Their belief keeps me curious, grounded, and committed to opening doors for others.
+          </p>
+
+          <div class="credentials-box">
+            <span class="cred-arrow">↗</span>
+            <div class="cred-text-block">
+              <strong>Engineering meets design.</strong>
+              <span>BSc Telecommunications &amp; Information Engineering (JKUAT)</span>
+              <span>Master of Data Science — in progress</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         06 — Writing
+         ========================================================================== -->
+    <section class="writing-editorial-section" id="writing">
+      <div class="container">
+        <div class="writing-header-row">
+          <h2 class="section-title-large" style="margin-bottom: 0;">Writing &amp; Guides</h2>
+        </div>
+
+        <div class="writing-editorial-table">
+          <!-- Row 1 -->
+          <a href="https://medium.com/@janinemakorre/how-to-submit-your-outreachy-proposal-on-wikimedia-phabricator-a-step-by-step-guide-d90b8ca69d86" target="_blank" rel="noopener noreferrer" class="writing-row-link">
+            <div class="writing-col-meta">
+              <span class="writing-cat">Practical guide</span>
+              <span class="writing-platform">Medium</span>
+            </div>
+            <div class="writing-col-content">
+              <h3 class="writing-article-title">How to submit your Outreachy proposal on Wikimedia Phabricator</h3>
+              <p class="writing-article-desc">A step-by-step practical guide for fellow applicants.</p>
+            </div>
+            <div class="writing-col-arrow">↗</div>
+          </a>
+
+          <!-- Row 2 -->
+          <a href="https://uxer-janine.github.io/outreachy-2026-claim-verification/" target="_blank" rel="noopener noreferrer" class="writing-row-link">
+            <div class="writing-col-meta">
+              <span class="writing-cat">Open resource</span>
+              <span class="writing-platform">Knowledge base</span>
+            </div>
+            <div class="writing-col-content">
+              <h3 class="writing-article-title">Claim–Source Verification Knowledge Base</h3>
+              <p class="writing-article-desc">Practical guidance and documented cases for evaluating evidence and source credibility.</p>
+            </div>
+            <div class="writing-col-arrow">↗</div>
+          </a>
+
+          <!-- Row 3 -->
+          <a href="https://github.com/Uxer-Janine/outreachy-docling-task" target="_blank" rel="noopener noreferrer" class="writing-row-link">
+            <div class="writing-col-meta">
+              <span class="writing-cat">Documentation</span>
+              <span class="writing-platform">GitHub</span>
+            </div>
+            <div class="writing-col-content">
+              <h3 class="writing-article-title">Multilingual OCR experiments</h3>
+              <p class="writing-article-desc">Benchmarking Tesseract, EasyOCR, and RapidOCR on Swahili and French materials.</p>
+            </div>
+            <div class="writing-col-arrow">↗</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         07 — Experience & CV (Compact Career Timeline)
+         ========================================================================== -->
+    <section class="experience-editorial-section" id="experience">
+      <div class="container experience-editorial-grid">
+        <div>
+          <span class="section-eyebrow">CAREER CONTEXT</span>
+          <h2 class="section-title-large" style="margin-bottom: 24px;">
+            Experience
+          </h2>
+
+          <!-- Small Career Timeline with Arrows -->
+          <div class="timeline-flow" style="max-width: 480px;">
+            <div class="timeline-step">
+              <span class="timeline-dot" style="background: #697089;"></span>
+              <span class="timeline-org-name">Unitel Kenya</span>
+              <span class="timeline-period">2019–2021 · Engineering Intern</span>
+            </div>
+            <div class="timeline-arrow">↓</div>
+
+            <div class="timeline-step">
+              <span class="timeline-dot" style="background: var(--brand-burgundy);"></span>
+              <span class="timeline-org-name">Vumbua Tech &amp; Mingling Trends</span>
+              <span class="timeline-period">2023–2025 · Design Mentorship</span>
+            </div>
+            <div class="timeline-arrow">↓</div>
+
+            <div class="timeline-step">
+              <span class="timeline-dot" style="background: var(--accent-raspberry);"></span>
+              <span class="timeline-org-name">Oppia Foundation</span>
+              <span class="timeline-period">2024–2025 · UI/UX Designer</span>
+            </div>
+            <div class="timeline-arrow">↓</div>
+
+            <div class="timeline-step" style="border-color: var(--brand-burgundy); background: #FFFDFB;">
+              <span class="timeline-dot" style="background: var(--brand-burgundy);"></span>
+              <span class="timeline-org-name">eCitizen &amp; YEN Africa</span>
+              <span class="timeline-period">Current · Service Design &amp; Data</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-cta-col">
+          <p style="font-size: 1.05rem; color: var(--text-body); margin-bottom: 24px;">
+            For full role history, detailed project delivery, and technical skills, download my resume:
+          </p>
+          <a href="Assets/CVs/Janine_Makorre_Service_Designer_CV.pdf" download="Janine_Makorre_Service_Designer_CV.pdf" class="btn btn-burgundy btn-lg">
+            Download Service Design CV ↓
+          </a>
+          <span class="cv-note-text">PDF · 1 page</span>
+          
+          <a href="Assets/CVs/Janine_Makorre_Data_Science_CV_Green_Updated.pdf" download="Janine_Makorre_Data_Science_CV_Green_Updated.pdf" class="cv-alt-link">
+            Download Data Science CV ↓
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       08 — Contact (Dark Midnight Navy Footer)
+       ========================================================================== -->
+  <footer class="contact-dark-section" id="contact">
+    <div class="container">
+      <div class="contact-dark-grid">
+        <!-- Left Column -->
+        <div>
+          <span class="contact-dark-eyebrow">LET'S COLLABORATE</span>
+          <h2 class="contact-dark-headline">
+            Let's build<br>thoughtful<br>experiences.
+          </h2>
+          <p class="contact-dark-lead">
+            Whether you'd like to discuss a design role, explore a partnership for community work in Kuria, or talk through data systems, my inbox is open.
+          </p>
+          <a href="mailto:janinemakorre@gmail.com" class="contact-dark-email">
+            janinemakorre@gmail.com ↗
+          </a>
+        </div>
+
+        <!-- Right Column -->
+        <div>
+          <h3 class="contact-dark-subhead">
+            Find my work.<br>
+            Start a conversation.
+          </h3>
+          <div class="contact-social-grid">
+            <a href="https://www.linkedin.com/in/janine-makorre-30a456179/" target="_blank" rel="noopener noreferrer" class="social-dark-btn">
+              <span><strong>in</strong> LinkedIn</span>
+              <span>↗</span>
+            </a>
+            <a href="https://www.behance.net/janinemakorre" target="_blank" rel="noopener noreferrer" class="social-dark-btn">
+              <span><strong>Bē</strong> Behance</span>
+              <span>↗</span>
+            </a>
+            <a href="https://github.com/Uxer-Janine" target="_blank" rel="noopener noreferrer" class="social-dark-btn">
+              <span><strong>&lt;/&gt;</strong> GitHub</span>
+              <span>↗</span>
+            </a>
+            <a href="https://dribbble.com/Janine_Robi" target="_blank" rel="noopener noreferrer" class="social-dark-btn">
+              <span><strong>⚽</strong> Dribbble</span>
+              <span>↗</span>
+            </a>
+            <a href="https://medium.com/@janinemakorre" target="_blank" rel="noopener noreferrer" class="social-dark-btn" style="grid-column: span 2;">
+              <span><strong>M</strong> Medium</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-bottom-footer-bar">
+        <div>
+          <strong>Janine Makorre.</strong> Service &amp; product design · Research · Community
+        </div>
+        <div style="display: flex; gap: 24px; align-items: center;">
+          <a href="#top" style="color: rgba(255,255,255,0.7); text-decoration: underline;">Back to top ↑</a>
+          <span>© 2026 Janine Makorre</span>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script src="components.js"></script>
+  <script src="components.js?v=content-refinement-v4"></script>
 </body>
 </html>

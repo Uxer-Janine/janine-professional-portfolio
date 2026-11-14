@@ -1,0 +1,334 @@
+{
+  "sections": [
+    {
+      "id": "service-design",
+      "number": "01",
+      "label": "Designing with people",
+      "title": "Service & Product Design",
+      "intro": "I use research to understand human experiences, then transform those insights into clearer journeys, accessible interfaces, and resilient public systems.",
+      "projects": [
+        {
+          "id": "oppia",
+          "title": "Oppia Foundation — Empowering Young Learners",
+          "eyebrow": "EdTech · UX Research & Localization",
+          "layout": "feature",
+          "problem": "How do primary school students explore interactive lessons when using a computer for the first time?",
+          "contribution": "I researched how children navigate topic dashboards and lesson paths on laptops. By observing their natural choices and points of hesitation, I redesigned navigation cues, simplified lesson filters, and localized learning content into Swahili so every child can learn with confidence.",
+          "status": "Field usability research completed · Swahili localization published",
+          "date": "October 2024–Present",
+          "tags": [
+            "UX research",
+            "Interface design",
+            "Education",
+            "Swahili localization"
+          ],
+          "image": {
+            "src": "Assets/Work/oppia-topic-page.png",
+            "width": 846,
+            "height": 531,
+            "alt": "Oppia Place Values topic page showing lessons, practice filters, and the Start action",
+            "caption": "Oppia Place Values interface evaluated in field usability sessions."
+          },
+          "links": [
+            {
+              "label": "Read Oppia case study",
+              "url": "https://uxer-janine.github.io/oppia-project-showcase/"
+            }
+          ]
+        },
+        {
+          "id": "kuria-girl-child",
+          "title": "Kuria Girl Child Development Center",
+          "eyebrow": "Community Advocacy · Web Platform",
+          "problem": "Creating an engaging digital home to share grassroots stories against FGM and mobilize support for girls' education.",
+          "contribution": "I partnered with the Kuria Girl Child Development Center to create a modern digital presence that tells their stories with dignity, rallies international partners, and powers grassroots STEM and digital literacy workshops for local girls.",
+          "status": "Active community partnership · Figma prototype",
+          "tags": [
+            "UX/UI design",
+            "Website redesign",
+            "Community advocacy",
+            "STEM education"
+          ],
+          "image": {
+            "src": "Assets/Work/kuria-girl-child.png",
+            "alt": "Kuria Girl Child Development Center web interface from Behance"
+          },
+          "links": [
+            {
+              "label": "View on Behance",
+              "url": "https://www.behance.net/gallery/258432907/Kuria-Girl-Child-Development-Center"
+            },
+            {
+              "label": "View Figma Prototype",
+              "url": "https://www.figma.com/proto/1Fd84KXbZjXbUm2M1kWxUU/Kuria-Girl-Child-Development-Center?node-id=173-3837&page-id=1%3A6&starting-point-node-id=173%3A3573&t=J3QMmxh1ui96ADep-1"
+            }
+          ]
+        },
+        {
+          "id": "kenyaconnect",
+          "title": "KenyaConnect — Digitizing Citizen Access",
+          "eyebrow": "Civic Service Design · eCitizen Ecosystem",
+          "problem": "How can public services be redesigned so citizens don't get lost in bureaucracy?",
+          "contribution": "I mapped end-to-end citizen payment blueprints and worked closely with government agencies to simplify multi-step public workflows. Using telemetry logs to identify transaction drop-offs, we optimized the self-service flow to increase successful completions and reduce citizen frustration.",
+          "status": "Implemented public workflow optimization",
+          "tags": [
+            "Service design",
+            "Service blueprinting",
+            "Civic tech",
+            "Analytics"
+          ],
+          "image": {
+            "src": "Assets/Work/kenya-connect.png",
+            "alt": "KenyaConnect redesign case study interface from Behance"
+          },
+          "links": [
+            {
+              "label": "View on Behance",
+              "url": "https://www.behance.net/gallery/258354567/Kenya-Connect-Redesign"
+            }
+          ]
+        },
+        {
+          "id": "trends-sphere",
+          "title": "Trends-Sphere Boost — Merchant Campaign Builder",
+          "eyebrow": "Product Design · Mobile Flow",
+          "problem": "Small business owners often abandon promotional advertising when faced with complicated configuration forms.",
+          "contribution": "I redesigned the multi-channel campaign creation flow into a guided 3-step setup with interactive budget sliders and live audience reach forecasts, making digital marketing accessible to everyday merchants.",
+          "status": "Mobile interaction design & optimization",
+          "tags": [
+            "Product design",
+            "Mobile UX",
+            "Conversion optimization"
+          ],
+          "image": {
+            "src": "Assets/Work/trendsphere-boost.png",
+            "alt": "Trendsphere Boost mobile app interface from Behance"
+          },
+          "links": [
+            {
+              "label": "View on Behance",
+              "url": "https://www.behance.net/gallery/258433681/Trendsphere-Boost"
+            }
+          ]
+        },
+        {
+          "id": "cold-data",
+          "title": "Cold Data Technologies — Infrastructure Web Platform",
+          "eyebrow": "Enterprise Web Design · Brand Identity",
+          "problem": "Translating complex data infrastructure capabilities into clear, trustworthy value propositions for enterprise buyers.",
+          "contribution": "A high-performance brand identity and responsive web platform for a modern data infrastructure company. I designed the information architecture and visual system to translate complex telemetry and archival storage solutions into transparent, compelling value propositions for enterprise buyers.",
+          "status": "Brand identity & responsive web platform",
+          "tags": [
+            "Enterprise design",
+            "Information architecture",
+            "Brand identity"
+          ],
+          "image": {
+            "src": "Assets/Work/cold-data-technologies.png",
+            "alt": "Cold Data Technologies website design from Behance"
+          },
+          "links": [
+            {
+              "label": "View on Behance",
+              "url": "https://www.behance.net/gallery/258418597/Cold-Data-Technologies"
+            }
+          ]
+        },
+        {
+          "id": "maziwalink",
+          "title": "MaziwaLink × PamojaGov — Dairy Cooperative Service",
+          "eyebrow": "AgriTech × GovTech Service Blueprint",
+          "problem": "Rural dairy smallholders face manual intake errors, delayed payments, and disconnected veterinary support.",
+          "contribution": "I formulated an integrated service blueprint and low-bandwidth mobile interface connecting dairy collection centers directly to county cooperative accounts, enabling automated quality grading and instant mobile money disbursements.",
+          "status": "Service blueprint & low-bandwidth mobile interface",
+          "tags": [
+            "Service blueprinting",
+            "AgriTech",
+            "GovTech",
+            "Mobile money"
+          ],
+          "image": {
+            "src": "Assets/Work/maziwalink.png",
+            "alt": "MaziwaLink mobile and web app interface from Behance"
+          },
+          "links": [
+            {
+              "label": "View on Behance",
+              "url": "https://www.behance.net/gallery/258412591/MaziwaLink"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "open-source",
+      "number": "02",
+      "label": "Contributing in the open",
+      "title": "Open Source & Research",
+      "intro": "I contribute user research, code, documentation, and practical setup guides to global open-source communities.",
+      "projects": [
+        {
+          "id": "wikipedia",
+          "title": "Wiki Education — Evidence Lab",
+          "eyebrow": "Open Source UX · React PR Merged",
+          "layout": "contribution",
+          "problem": "Verifying citations on Wikipedia can be intimidating for student editors.",
+          "contribution": "I designed Evidence Lab—a guided verification interface placing citation texts and assertions side by side for transparent evaluation. Alongside the UX, I contributed directly to the Wiki Education React codebase, fixing date boundary handling and component initialization in a pull request merged into master.",
+          "status": "Technical pull request merged into master · UX proposed",
+          "date": "October 2026",
+          "tags": [
+            "Claim verification",
+            "UX research",
+            "React",
+            "Open source",
+            "Community"
+          ],
+          "image": {
+            "src": "Assets/Work/evidence-lab-proposal.png",
+            "width": 1440,
+            "height": 1024,
+            "alt": "Proposed Evidence Lab workspace with a source reader, evidence card, and reasoning area",
+            "caption": "Evidence Lab · proposed verification workspace for Wiki Education."
+          },
+          "links": [
+            {
+              "label": "View on Behance",
+              "url": "https://www.behance.net/gallery/258413267/Wikipedia-Claim-source-verfification-UX"
+            },
+            {
+              "label": "Explore Evidence Lab showcase",
+              "url": "https://uxer-janine.github.io/outreachy-2026-claim-verification/"
+            },
+            {
+              "label": "Merged · PR #7204",
+              "url": "https://github.com/WikiEducationFoundation/WikiEduDashboard/pull/7204",
+              "badge": true
+            }
+          ]
+        },
+        {
+          "id": "docling",
+          "title": "Fedora Multilingual OCR Evaluation",
+          "eyebrow": "Fedora Project · AI & Language Evaluation",
+          "layout": "contribution",
+          "problem": "How accurately do modern open-source OCR engines transcribe low-resource language typography?",
+          "contribution": "I benchmarked Tesseract, EasyOCR, and RapidOCR on Swahili and French documents, documenting error distributions and layout retention challenges. Alongside the benchmarks, I authored developer documentation for the Fedora and RamaLama communities.",
+          "status": "Published evaluation benchmarks & technical documentation",
+          "date": "2026",
+          "tags": [
+            "Python",
+            "Multilingual OCR",
+            "Benchmarking",
+            "Technical writing",
+            "Fedora"
+          ],
+          "links": [
+            {
+              "label": "Explore Fedora showcase",
+              "url": "https://uxer-janine.github.io/outreachy-portfolio/"
+            },
+            {
+              "label": "View OCR experiments on GitHub",
+              "url": "https://github.com/Uxer-Janine/outreachy-docling-task"
+            }
+          ],
+          "image": {
+            "src": "Assets/Images/word-count-comparison.png",
+            "width": 640,
+            "height": 480,
+            "alt": "Bar chart comparing word counts in Swahili and French OCR documents",
+            "caption": "Document analysis comparing character counts across Swahili and French texts."
+          }
+        }
+      ]
+    },
+    {
+      "id": "data-science",
+      "number": "03",
+      "label": "Investigating with data",
+      "title": "Data Science & Analytics",
+      "intro": "I explore complex datasets, uncover patterns, and design intuitive dashboards and models that help teams make informed decisions.",
+      "projects": [
+        {
+          "id": "financial-guardian",
+          "title": "Financial Guardian AI — Unmasking Debt Webs",
+          "eyebrow": "Data Science · Risk Telemetry",
+          "problem": "How can multi-lending borrower data uncover hidden debt webs and default risks?",
+          "contribution": "In fast-moving digital microfinance, borrowers often juggle multiple hidden loans across apps without visibility, leading to unseen debt spirals. I analyzed borrower transaction patterns and built exploratory visualizations that reveal overlapping debt networks, helping credit teams detect over-indebtedness early.",
+          "status": "Documented exploratory analysis & risk visualization",
+          "tags": [
+            "Python",
+            "Exploratory analysis",
+            "Machine learning",
+            "Risk modeling"
+          ],
+          "links": [
+            {
+              "label": "View Financial Guardian on GitHub",
+              "url": "https://github.com/Uxer-Janine/Financial-Guardian-AI-Unmasking-Hidden-Debt-Webs."
+            }
+          ]
+        },
+        {
+          "id": "energy-forecasting",
+          "title": "Kenya Renewable Energy Demand Forecasting",
+          "eyebrow": "Time-Series · SARIMAX Modeling",
+          "problem": "What can historical electricity data tell us about Kenya's seasonal consumption trends?",
+          "contribution": "With Kenya drawing the vast majority of its electricity from geothermal, hydro, and wind, anticipating seasonal peaks is essential for grid resilience. I analyzed national generation datasets and developed SARIMAX time-series forecasting models to predict consumption trends and support cleaner energy distribution.",
+          "status": "Time-series decomposition & seasonal SARIMAX modeling",
+          "tags": [
+            "Time series",
+            "SARIMAX",
+            "Data visualization",
+            "Clean energy"
+          ],
+          "links": [
+            {
+              "label": "View energy project on GitHub",
+              "url": "https://github.com/Uxer-Janine/Renewable-Energy-Forecasting"
+            }
+          ]
+        },
+        {
+          "id": "aviation-analysis",
+          "title": "FlightRisk — Aviation Accident Severity",
+          "eyebrow": "Statistical EDA · Safety Analytics",
+          "problem": "How can historical accident logs frame correlations around operating conditions and accident severity?",
+          "contribution": "Examining decades of flight safety records to identify operating conditions most closely correlated with severe outcomes. I cleaned and synthesized dense incident logs into exploratory data visualisations, highlighting how aircraft category, engine configurations, and flight phases influence survivability.",
+          "status": "Documented statistical EDA & severity visualization",
+          "tags": [
+            "Data cleaning",
+            "Exploratory analysis",
+            "Statistical visualization"
+          ],
+          "links": [
+            {
+              "label": "Explore aviation analysis on GitHub",
+              "url": "https://github.com/Uxer-Janine/FlightRisk-Aviation-Accident-Analysis"
+            }
+          ]
+        },
+        {
+          "id": "yen-africa",
+          "title": "YEN Africa Commercial & Sales Analytics",
+          "eyebrow": "Commercial Telemetry · Executive Dashboards",
+          "problem": "Translating multi-channel operational and sales data into strategic growth insights.",
+          "contribution": "Translating operational telemetry into clear business strategy. I validate and reconcile multi-channel sales and customer datasets, design interactive executive dashboards, and uncover conversion patterns that help the leadership team make informed growth decisions.",
+          "status": "Consulting engagement · Oct 2025–Present",
+          "tags": [
+            "Commercial analytics",
+            "Google Sites",
+            "KPI dashboards",
+            "Sales telemetry"
+          ],
+          "links": [
+            {
+              "label": "Consulting engagement details",
+              "url": "index.html#experience"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

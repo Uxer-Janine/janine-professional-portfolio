@@ -1,132 +1,170 @@
-/* 
-   Janine Makorre Portfolio JS Components
-   Handles navigation, dark/light theme toggle, and progressive disclosure project filtering.
-*/
+/* ==========================================================================
+   Janine Makorre — Portfolio Interactions
+   Handles sticky navigation, mobile menu toggle, scroll-spy, and filter bar.
+   ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
-  initTheme();
-  initProjectFilters();
+  initWorkFilterScrollSpy();
+  initSectionScrollSpy();
+  initScrollAnimations();
 });
 
-// Navigation logic & Mobile Menu
+/* --------------------------------------------------------------------------
+   1. Sticky Header & Mobile Menu
+   -------------------------------------------------------------------------- */
 function initNavigation() {
-  const header = document.querySelector('header.site-header');
+  const header = document.querySelector('.site-header');
   const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  
+  const navMenu = document.querySelector('.nav-menu');
+
   if (!header) return;
 
-  // Add shadow on scroll
+  // Header scroll shadow
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 30) {
+    if (window.scrollY > 20) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
     }
-  });
+  }, { passive: true });
 
-  // Toggle mobile menu
-  if (menuToggle && navLinks) {
+  // Mobile menu toggle
+  if (menuToggle && navMenu) {
+    const toggleMenu = (open) => {
+      const isExpanded = open !== undefined ? open : !navMenu.classList.contains('mobile-open');
+      navMenu.classList.toggle('mobile-open', isExpanded);
+      menuToggle.setAttribute('aria-expanded', String(isExpanded));
+    };
+
     menuToggle.addEventListener('click', (e) => {
       e.stopPropagation();
-      navLinks.classList.toggle('mobile-open');
+      toggleMenu();
     });
 
+    // Close on click outside
     document.addEventListener('click', (e) => {
-      if (navLinks.classList.contains('mobile-open') && !navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
-        navLinks.classList.remove('mobile-open');
+      if (navMenu.classList.contains('mobile-open') && !header.contains(e.target)) {
+        toggleMenu(false);
       }
     });
-  }
 
-  // Active state highlighting
-  const currentPath = window.location.pathname;
-  const currentFile = currentPath.substring(currentPath.lastIndexOf('/') + 1) || 'index.html';
-  const navAnchors = document.querySelectorAll('.nav-links a');
-  
-  navAnchors.forEach(anchor => {
-    const href = anchor.getAttribute('href');
-    if (href === currentFile || (currentFile === '' && href === 'index.html')) {
-      anchor.classList.add('active');
-    } else {
-      anchor.classList.remove('active');
-    }
-  });
-}
-
-// Dark Mode / Light Mode toggle with Dark Mode default
-function initTheme() {
-  const themeBtn = document.querySelector('.theme-btn');
-  if (!themeBtn) return;
-
-  const savedTheme = localStorage.getItem('janine-theme');
-  const initialTheme = savedTheme || 'dark';
-  
-  applyTheme(initialTheme);
-
-  themeBtn.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-    const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    applyTheme(nextTheme);
-  });
-
-  function applyTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('janine-theme', theme);
-    
-    // Update theme toggle icon
-    const iconContainer = themeBtn.querySelector('svg');
-    if (iconContainer) {
-      if (theme === 'dark') {
-        // Sun icon for switching to light mode
-        iconContainer.innerHTML = `
-          <circle cx="12" cy="12" r="4"></circle>
-          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
-        `;
-      } else {
-        // Moon icon for switching to dark mode
-        iconContainer.innerHTML = `
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        `;
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('mobile-open')) {
+        toggleMenu(false);
       }
-    }
-  }
-}
+    });
 
-// Progressive Disclosure Project Filter logic
-function initProjectFilters() {
-  const filterPills = document.querySelectorAll('.filter-pill');
-  const projectItems = document.querySelectorAll('[data-category]');
-
-  if (filterPills.length === 0 || projectItems.length === 0) return;
-
-  filterPills.forEach(pill => {
-    pill.addEventListener('click', () => {
-      // Set active pill
-      filterPills.forEach(p => p.classList.remove('active'));
-      pill.classList.add('active');
-
-      const filterValue = pill.getAttribute('data-filter');
-
-      projectItems.forEach(item => {
-        const itemCategories = item.getAttribute('data-category').split(' ');
-        
-        if (filterValue === 'all' || itemCategories.includes(filterValue)) {
-          if (item.tagName === 'TR') {
-            item.style.display = 'table-row';
-          } else {
-            item.style.display = 'flex';
-          }
-          item.style.opacity = '0';
-          setTimeout(() => {
-            item.style.transition = 'opacity 0.3s ease';
-            item.style.opacity = '1';
-          }, 30);
-        } else {
-          item.style.display = 'none';
-        }
+    // Close when clicking any nav link
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggleMenu(false);
       });
     });
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. Work Page Filter Bar Scroll-Spy & Smooth Navigation
+   -------------------------------------------------------------------------- */
+function initWorkFilterScrollSpy() {
+  const filterButtons = document.querySelectorAll('.work-filter-bar .filter-btn');
+  const categoryGroups = document.querySelectorAll('.work-category-group');
+
+  if (!filterButtons.length || !categoryGroups.length) return;
+
+  // Click handler for instant active state update
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', function() {
+      filterButtons.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+    });
   });
+
+  // IntersectionObserver to sync filter bar with scroll position
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          filterButtons.forEach(btn => {
+            const href = btn.getAttribute('href');
+            if (href === `#${id}`) {
+              filterButtons.forEach(b => b.classList.remove('active'));
+              btn.classList.add('active');
+            }
+          });
+        }
+      });
+    }, {
+      rootMargin: '-20% 0px -70% 0px',
+      threshold: 0
+    });
+
+    categoryGroups.forEach(group => observer.observe(group));
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. Homepage Navigation Scroll-Spy
+   -------------------------------------------------------------------------- */
+function initSectionScrollSpy() {
+  const navLinks = document.querySelectorAll('.nav-menu a[href*="#"]');
+  if (!navLinks.length) return;
+
+  const sections = [];
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    const hash = href.includes('#') ? href.split('#')[1] : null;
+    if (hash) {
+      const target = document.getElementById(hash);
+      if (target) sections.push({ id: hash, target, link });
+    }
+  });
+
+  if (!sections.length) return;
+
+  window.addEventListener('scroll', () => {
+    const scrollPos = window.scrollY + 120;
+    for (let i = sections.length - 1; i >= 0; i--) {
+      const section = sections[i];
+      if (scrollPos >= section.target.offsetTop) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        section.link.classList.add('active');
+        break;
+      }
+    }
+  }, { passive: true });
+}
+
+/* --------------------------------------------------------------------------
+   4. Gentle Entrance Animations (Respects prefers-reduced-motion)
+   -------------------------------------------------------------------------- */
+function initScrollAnimations() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  const animatables = document.querySelectorAll('.featured-card, .work-card-large, .comm-card, .opensource-card');
+  if (!animatables.length || !('IntersectionObserver' in window)) return;
+
+  animatables.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(16px)';
+    el.style.transition = 'opacity 0.5s ease-out, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)';
+  });
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  animatables.forEach(el => observer.observe(el));
 }

@@ -1,318 +1,848 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work & Project Archive — Janine Makorre</title>
-  <meta name="description" content="Complete portfolio archive of Janine Robi Makorre spanning UI/UX Design, Service Design, User Research, Data Science, ML/AI, and Open Source.">
-  <link rel="stylesheet" href="style.css">
+  <title>Work — Janine Robi Makorre | Service &amp; Product Design Projects</title>
+  <meta name="description"
+    content="Selected service blueprints, UX/UI case studies, data science analytics, and open-source contributions by Janine Robi Makorre.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://uxer-janine.github.io/janine-professional-portfolio/projects.html">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=content-refinement-v4">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Janine Robi Makorre">
+  <meta property="og:title" content="Work — Janine Robi Makorre | Service &amp; Product Design">
+  <meta property="og:description"
+    content="Selected service blueprints, UX/UI case studies, data science analytics, and open-source contributions by Janine Robi Makorre.">
+  <meta property="og:url" content="https://uxer-janine.github.io/janine-professional-portfolio/projects.html">
+  <meta property="og:image"
+    content="https://uxer-janine.github.io/janine-professional-portfolio/Assets/Images/solo.jpg">
 </head>
+
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <!-- Navigation Header -->
-  <header class="site-header">
-    <div class="container nav-container">
-      <a href="index.html" class="logo">
-        Janine Makorre <span class="logo-dot"></span>
+  <!-- Navigation Header (Consistent with Home) -->
+  <header class="site-header" id="top">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="Janine Robi Makorre — Home">
+        Janine Makorre<span class="brand-dot">.</span>
       </a>
-      
-      <button class="menu-toggle" aria-label="Toggle Navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
 
-      <ul class="nav-links">
-        <li><a href="projects.html" class="active">Work</a></li>
-        <li><a href="journey.html">Experience</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li>
-          <button class="theme-btn" aria-label="Toggle Light/Dark Theme">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="4"></circle>
-              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
-            </svg>
-          </button>
-        </li>
-      </ul>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" class="active">Work</a></li>
+          <li><a href="index.html#community">Community &amp; Roots</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#writing">Writing</a></li>
+          <li><a href="index.html#experience">CV</a></li>
+          <li><a href="#contact" class="nav-cta-btn">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="nav-menu"
+        aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
     </div>
   </header>
 
-  <!-- Page Banner -->
-  <section class="section" style="padding-top: 160px; padding-bottom: 60px;">
-    <div class="container">
-      <span class="section-label">Work & Catalog</span>
-      <h1>Featured Case Studies & Project Archive</h1>
-      <p class="lead" style="max-width: 680px;">
-        Explore in-depth case studies (Level 1) or browse the scannable work archive (Level 2) across Design, Research, Data Science, and Machine Learning.
-      </p>
-    </div>
-  </section>
+  <main id="main">
 
-  <!-- Level 1: Featured Case Studies Grid -->
-  <section class="section" style="padding-top: 40px;">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Level 1 — In-Depth Work</span>
-        <h2 class="section-title">Featured Case Studies</h2>
+    <!-- Work Page Hero -->
+    <section class="work-page-hero">
+      <div class="container">
+        <span class="section-eyebrow">Portfolio</span>
+        <h1 class="section-title-large">Selected Work</h1>
+        <p class="section-intro-text">
+          A selection of things I've designed, built, and explored across service design, UX research, data, and open source.
+        </p>
+
+        <!-- Category Jump Bar -->
+        <div class="work-filter-bar">
+          <a href="#product-service-design" class="filter-btn active">Product &amp; Service Design</a>
+          <a href="#open-source-work" class="filter-btn">Open Source &amp; Research</a>
+          <a href="#data-science-work" class="filter-btn">Data Science &amp; Analytics</a>
+          <a href="#engineering-work" class="filter-btn">Engineering Foundations</a>
+        </div>
       </div>
+    </section>
 
-      <div class="featured-grid">
-        
-        <!-- eCitizen Bridge Case Study -->
-        <article id="ecitizen" class="featured-card wide-card">
-          <div>
-            <span class="card-tag">Service Design → Data & Analytics</span>
-            <h3 class="card-title">eCitizen National Service Transformation</h3>
-            <p class="card-desc">
-              Analyzed citizen interaction bottlenecks on Kenya's national portal. Combined qualitative service journey mapping with quantitative portal transaction telemetry to redesign service touchpoints and streamline public access.
-            </p>
-            <div class="card-meta">
-              <span class="meta-pill">Service Design</span>
-              <span class="meta-pill">Data Analytics</span>
-              <span class="meta-pill">Public Policy</span>
-            </div>
-            <a href="journey.html#ecitizen" class="card-link">View Full Case Study Breakdown →</a>
-          </div>
-          <div class="photo-card" style="aspect-ratio: 16/10;">
-            <img src="Assets/Images/Janine_Oppia.jpg" alt="eCitizen research mapping">
-          </div>
-        </article>
+    <!-- Work Gallery Content -->
+    <section class="work-gallery-section">
+      <div class="container">
 
-        <!-- Oppia Usability Research -->
-        <article id="oppia" class="featured-card">
-          <div>
-            <span class="card-tag">User Research & UX</span>
-            <h3 class="card-title">Oppia Learning Platform Usability</h3>
-            <p class="card-desc">
-              Designed and executed field research sessions with primary school learners in Kenya, evaluating UI friction points in Oppia's offline mobile lessons and delivering UX recommendations.
-            </p>
-            <div class="card-meta">
-              <span class="meta-pill">Field Research</span>
-              <span class="meta-pill">Qualitative Methods</span>
-              <span class="meta-pill">EdTech</span>
-            </div>
+        <!-- ==================================================================
+             Category 1: Product & Service Design (6 Projects)
+             ================================================================== -->
+        <div class="work-category-group" id="product-service-design">
+          <div class="work-category-title">
+            <span>Product &amp; Service Design</span>
+            <span class="work-category-count">6 Projects</span>
           </div>
-          <a href="journey.html" class="card-link">Read Field Report →</a>
-        </article>
 
-        <!-- Financial Guardian AI -->
-        <article id="financial-guardian" class="featured-card">
-          <div>
-            <span class="card-tag">Data Science & AI</span>
-            <h3 class="card-title">Financial Guardian Anomaly Detection</h3>
-            <p class="card-desc">
-              Trained supervised and unsupervised ML algorithms (Random Forest, Isolation Forest) on high-frequency mobile money transaction streams to identify fraudulent transfers.
-            </p>
-            <div class="card-meta">
-              <span class="meta-pill">Python</span>
-              <span class="meta-pill">Scikit-Learn</span>
-              <span class="meta-pill">Anomaly Detection</span>
-            </div>
-          </div>
-          <a href="https://github.com/Uxer-Janine" target="_blank" class="card-link">View GitHub Repo →</a>
-        </article>
+          <div class="work-cards-grid">
 
-        <!-- Docling OCR Pipeline -->
-        <article id="docling" class="featured-card">
-          <div>
-            <span class="card-tag">Open Source & ML</span>
-            <h3 class="card-title">Docling OCR Document Parsing</h3>
-            <p class="card-desc">
-              Developed automated pipelines for processing complex PDFs, extracting structured markdown tables, and parsing OCR tokens for downstream LLM retrieval.
-            </p>
-            <div class="card-meta">
-              <span class="meta-pill">Docling</span>
-              <span class="meta-pill">Python</span>
-              <span class="meta-pill">Computer Vision</span>
-            </div>
-          </div>
-          <a href="project-ramalama.html" class="card-link">Read Contribution Notes →</a>
-        </article>
+            <!-- Project 1: Kuria Girl Child (Actual Behance Showcase Image) -->
+            <article class="work-card-large">
+              <div class="work-card-media"
+                style="background: radial-gradient(circle at 50% 100%, #FCE4EC 0%, #FFF0F5 100%);">
+                <div class="mockup-browser">
+                  <div class="browser-header-bar">
+                    <div class="browser-dots">
+                      <span class="browser-dot dot-red"></span>
+                      <span class="browser-dot dot-yellow"></span>
+                      <span class="browser-dot dot-green"></span>
+                    </div>
+                    <div class="browser-url-pill">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                      </svg>
+                      kuriagirlchild.org
+                    </div>
+                  </div>
+                  <div class="browser-viewport">
+                    <img src="Assets/Work/kuria-girl-child.png"
+                      alt="Kuria Girl Child Development Center web interface from Behance" loading="lazy"
+                      style="width: 100%; height: auto; display: block; object-fit: cover;">
+                  </div>
+                </div>
+              </div>
+              <div class="work-card-content">
+                <div style="margin-bottom: 10px;">
+                  <span class="tag tag-blush">Community Advocacy</span>
+                  <span class="tag tag-peach">Web Platform &amp; Branding</span>
+                </div>
+                <h3 class="work-card-title">Kuria Girl Child Development Center</h3>
+                <p class="work-card-desc">
+                  A modern digital presence for grassroots advocacy against Female Genital Mutilation and early forced
+                  marriage in Kuria, Kenya. I redesigned the organization's web platform to communicate its mission with
+                  clarity and dignity to global partners and donors, while coordinating digital literacy and mathematics
+                  workshops for local girls.
+                </p>
+                <div class="work-card-meta">
+                  <strong>Focus:</strong> Brand storytelling, donor mobilization &amp; community mentorship portal
+                </div>
+                <div class="work-card-footer" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                  <a href="https://www.behance.net/gallery/258432907/Kuria-Girl-Child-Development-Center"
+                    target="_blank" rel="noopener noreferrer" class="btn btn-burgundy btn-sm">
+                    View on Behance ↗
+                  </a>
+                  <a href="https://www.figma.com/proto/1Fd84KXbZjXbUm2M1kWxUU/Kuria-Girl-Child-Development-Center?node-id=173-3837&amp;page-id=1%3A6&amp;starting-point-node-id=173%3A3573&amp;t=J3QMmxh1ui96ADep-1"
+                    target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                    Figma Prototype ↗
+                  </a>
+                </div>
+              </div>
+            </article>
 
-        <!-- Renewable Energy Forecasting -->
-        <article id="energy-forecasting" class="featured-card">
-          <div>
-            <span class="card-tag">Data & Forecasting</span>
-            <h3 class="card-title">Grid Solar Yield Forecasting</h3>
-            <p class="card-desc">
-              Analyzed weather sensor telemetry and solar array output to forecast daily power load profiles, utilizing Prophet time-series models for peak shaving predictions.
-            </p>
-            <div class="card-meta">
-              <span class="meta-pill">Prophet</span>
-              <span class="meta-pill">Pandas</span>
-              <span class="meta-pill">Clean Energy</span>
-            </div>
+            <!-- Project 2: Trendsphere Boost (Actual Behance Image) -->
+            <article class="work-card-large">
+              <div class="work-card-media"
+                style="background: radial-gradient(circle at 50% 100%, #FFF5EF 0%, var(--accent-peach) 100%);">
+                <div class="mockup-browser">
+                  <div class="browser-header-bar">
+                    <div class="browser-dots">
+                      <span class="browser-dot dot-red"></span>
+                      <span class="browser-dot dot-yellow"></span>
+                      <span class="browser-dot dot-green"></span>
+                    </div>
+                    <div class="browser-url-pill">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                      </svg>
+                      trendsphere.com/boost
+                    </div>
+                  </div>
+                  <div class="browser-viewport">
+                    <img src="Assets/Work/trendsphere-boost.png"
+                      alt="Trendsphere Boost mobile app interface from Behance" loading="lazy"
+                      style="width: 100%; height: auto; display: block; object-fit: cover;">
+                  </div>
+                </div>
+              </div>
+              <div class="work-card-content">
+                <div style="margin-bottom: 10px;">
+                  <span class="tag tag-blush">Product Design</span>
+                  <span class="tag tag-navy">Mobile App UI/UX</span>
+                </div>
+                <h3 class="work-card-title">Trendsphere Boost — Merchant Campaign Builder</h3>
+                <p class="work-card-desc">
+                  Small business owners frequently abandon digital advertising when faced with complicated configuration
+                  forms. I redesigned the multi-channel campaign creation flow into an approachable 3-step setup with
+                  interactive budget sliders and live audience reach forecasts, making digital marketing simple and
+                  intuitive for everyday merchants.
+                </p>
+                <div class="work-card-meta">
+                  <strong>Focus:</strong> Mobile interaction design, progressive disclosure &amp; conversion
+                  optimization
+                </div>
+                <div class="work-card-footer">
+                  <a href="https://www.behance.net/gallery/258433681/Trendsphere-Boost" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-burgundy btn-sm">
+                    View on Behance ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Cold Data Technologies (Actual Behance Image) -->
+            <article class="work-card-large">
+              <div class="work-card-media"
+                style="background: radial-gradient(circle at 50% 100%, #E8F0FE 0%, #F5F8FF 100%);">
+                <div class="mockup-browser">
+                  <div class="browser-header-bar">
+                    <div class="browser-dots">
+                      <span class="browser-dot dot-red"></span>
+                      <span class="browser-dot dot-yellow"></span>
+                      <span class="browser-dot dot-green"></span>
+                    </div>
+                    <div class="browser-url-pill">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                      </svg>
+                      colddatatech.com
+                    </div>
+                  </div>
+                  <div class="browser-viewport">
+                    <img src="Assets/Work/cold-data-technologies.png"
+                      alt="Cold Data Technologies website design from Behance" loading="lazy"
+                      style="width: 100%; height: auto; display: block; object-fit: cover;">
+                  </div>
+                </div>
+              </div>
+              <div class="work-card-content">
+                <div style="margin-bottom: 10px;">
+                  <span class="tag tag-navy">Enterprise Web Design</span>
+                  <span class="tag tag-peach">Brand Identity</span>
+                </div>
+                <h3 class="work-card-title">Cold Data Technologies — Infrastructure Web Platform</h3>
+                <p class="work-card-desc">
+                  A high-performance brand identity and responsive web platform for a modern data infrastructure
+                  company. I designed the information architecture and visual system to translate complex telemetry and
+                  archival storage solutions into transparent, compelling value propositions for enterprise buyers.
+                </p>
+                <div class="work-card-meta">
+                  <strong>Focus:</strong> Enterprise information architecture, visual design system &amp; B2B conversion
+                </div>
+                <div class="work-card-footer">
+                  <a href="https://www.behance.net/gallery/258418597/Cold-Data-Technologies" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-burgundy btn-sm">
+                    View on Behance ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: MaziwaLink × PamojaGov (Actual Behance Image) -->
+            <article class="work-card-large">
+              <div class="work-card-media"
+                style="background: radial-gradient(circle at 50% 100%, #1A1F36 0%, #101322 100%);">
+                <div class="mockup-browser">
+                  <div class="browser-header-bar">
+                    <div class="browser-dots">
+                      <span class="browser-dot dot-red"></span>
+                      <span class="browser-dot dot-yellow"></span>
+                      <span class="browser-dot dot-green"></span>
+                    </div>
+                    <div class="browser-url-pill">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                      </svg>
+                      maziwalink.org/coop
+                    </div>
+                  </div>
+                  <div class="browser-viewport">
+                    <img src="Assets/Work/maziwalink.png" alt="MaziwaLink mobile and web app interface from Behance"
+                      loading="lazy" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                  </div>
+                </div>
+              </div>
+              <div class="work-card-content">
+                <div style="margin-bottom: 10px;">
+                  <span class="tag tag-navy">AgriTech × GovTech</span>
+                  <span class="tag tag-peach">Service Blueprinting</span>
+                </div>
+                <h3 class="work-card-title">MaziwaLink × PamojaGov — Dairy Cooperative Service</h3>
+                <p class="work-card-desc">
+                  Rural dairy farmers often face manual intake discrepancies, delayed payouts, and disconnected
+                  veterinary support. I formulated an integrated service blueprint and lightweight mobile interface
+                  connecting farm collection points with county cooperative records, enabling real-time quality grading
+                  and instant mobile money disbursements.
+                </p>
+                <div class="work-card-meta">
+                  <strong>Focus:</strong> Rural service blueprinting, low-bandwidth UI &amp; mobile money integration
+                </div>
+                <div class="work-card-footer">
+                  <a href="https://www.behance.net/gallery/258412591/MaziwaLink" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-burgundy btn-sm">
+                    View on Behance ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 5: KenyaConnect (Actual Behance Image) -->
+            <article class="work-card-large">
+              <div class="work-card-media"
+                style="background: radial-gradient(circle at 50% 100%, #E8F0FE 0%, #F5F8FF 100%);">
+                <div class="mockup-browser">
+                  <div class="browser-header-bar">
+                    <div class="browser-dots">
+                      <span class="browser-dot dot-red"></span>
+                      <span class="browser-dot dot-yellow"></span>
+                      <span class="browser-dot dot-green"></span>
+                    </div>
+                    <div class="browser-url-pill">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                      </svg>
+                      kenyaconnect.gov.ke
+                    </div>
+                  </div>
+                  <div class="browser-viewport">
+                    <img src="Assets/Work/kenya-connect.png"
+                      alt="KenyaConnect redesign case study interface from Behance" loading="lazy"
+                      style="width: 100%; height: auto; display: block; object-fit: cover;">
+                  </div>
+                </div>
+              </div>
+              <div class="work-card-content">
+                <div style="margin-bottom: 10px;">
+                  <span class="tag tag-peach">Civic Service Design</span>
+                  <span class="tag tag-navy">eCitizen Ecosystem</span>
+                </div>
+                <h3 class="work-card-title">KenyaConnect — Digitizing Citizen Access</h3>
+                <p class="work-card-desc">
+                  How can public services be designed so citizens don't get lost in bureaucracy? I mapped end-to-end
+                  citizen payment blueprints and worked with government stakeholders to simplify multi-step
+                  administrative workflows. By analyzing where people hesitated or dropped off, we streamlined the
+                  self-service steps so everyday citizens can complete their transactions quickly and with confidence.
+                </p>
+                <div class="work-card-meta">
+                  <strong>Focus:</strong> Service blueprinting, payment journey simplification &amp; agency onboarding
+                </div>
+                <div class="work-card-footer">
+                  <a href="https://www.behance.net/gallery/258354567/Kenya-Connect-Redesign" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-burgundy btn-sm">
+                    View on Behance ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 6: Oppia Foundation (MacBook Mockup) -->
+            <article class="work-card-large">
+              <div class="work-card-media"
+                style="background: radial-gradient(circle at 50% 100%, #FFE8D6 0%, #FFF5ED 100%);">
+                <div class="mockup-laptop">
+                  <div class="laptop-lid">
+                    <div class="laptop-camera-dot"></div>
+                    <div class="laptop-screen">
+                      <img src="Assets/Work/oppia-topic-page.png"
+                        alt="Oppia Place Values topic page evaluated in research" loading="lazy">
+                    </div>
+                  </div>
+                  <div class="laptop-base">
+                    <div class="laptop-base-notch"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="work-card-content">
+                <div style="margin-bottom: 10px;">
+                  <span class="tag tag-peach">EdTech · UX Research</span>
+                  <span class="tag tag-blush">Swahili Localization</span>
+                </div>
+                <h3 class="work-card-title">Oppia Foundation — Empowering Young Learners</h3>
+                <p class="work-card-desc">
+                  Evaluating how primary school learners navigate interactive mathematics lessons on laptops. By
+                  observing children explore topic dashboards, I identified points of hesitation in lesson selection and
+                  recommended simplified filtering, clearer progress indicators, and intuitive visual cues. To expand
+                  regional accessibility, I also contributed Swahili translations of lesson content.
+                </p>
+                <div class="work-card-meta">
+                  <strong>Focus:</strong> Primary learner usability testing, journey simplification &amp; Swahili
+                  localization
+                </div>
+                <div class="work-card-footer">
+                  <a href="https://uxer-janine.github.io/oppia-project-showcase/" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-burgundy btn-sm">
+                    Read Oppia case study ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
           </div>
-          <a href="https://github.com/Uxer-Janine" target="_blank" class="card-link">View Jupyter Notebook →</a>
-        </article>
+        </div>
+
+        <!-- ==================================================================
+             Category 2: Open Source & Research (2 Projects)
+             ================================================================== -->
+        <div class="work-category-group" id="open-source-work">
+          <div class="work-category-title">
+            <span>Open Source &amp; Research</span>
+            <span class="work-category-count">2 Projects</span>
+          </div>
+
+          <div class="work-cards-grid">
+
+            <!-- Project: Wikipedia Claim Verification (Evidence Lab) -->
+            <article class="work-card-large">
+              <div class="work-card-media"
+                style="background: radial-gradient(circle at 50% 100%, #E8EBF5 0%, #F4F6FC 100%);">
+                <div class="mockup-browser">
+                  <div class="browser-header-bar">
+                    <div class="browser-dots">
+                      <span class="browser-dot dot-red"></span>
+                      <span class="browser-dot dot-yellow"></span>
+                      <span class="browser-dot dot-green"></span>
+                    </div>
+                    <div class="browser-url-pill">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                      </svg>
+                      outreachy.wikiedu.org/evidence-lab
+                    </div>
+                  </div>
+                  <div class="browser-viewport">
+                    <img src="Assets/Work/wikipedia-claim-verification.png"
+                      alt="Evidence Lab claim verification interface proposal from Behance" loading="lazy"
+                      style="width: 100%; height: auto; display: block; object-fit: cover;">
+                  </div>
+                </div>
+              </div>
+              <div class="work-card-content">
+                <div style="margin-bottom: 10px;">
+                  <span class="tag tag-peach">Wiki Education · UX Design</span>
+                  <span class="tag tag-navy">Open Source Contribution</span>
+                </div>
+                <h3 class="work-card-title">Wikipedia Claim-Source Verification (Evidence Lab)</h3>
+                <p class="work-card-desc">
+                  Verifying citations on Wikipedia can be intimidating for student editors. I designed Evidence Lab—a
+                  guided verification experience placing citation texts and assertions side by side for transparent
+                  evaluation. Alongside the UX, I contributed directly to the platform's open-source React codebase,
+                  improving date picker interactions for editors worldwide.
+                </p>
+                <div class="work-card-meta">
+                  <strong>Focus:</strong> Verification UX design, contributor research &amp; upstream open-source code
+                </div>
+                <div class="work-card-footer" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                  <a href="https://www.behance.net/gallery/258413267/Wikipedia-Claim-source-verfification-UX"
+                    target="_blank" rel="noopener noreferrer" class="btn btn-burgundy btn-sm">
+                    Behance Gallery ↗
+                  </a>
+                  <a href="https://uxer-janine.github.io/outreachy-2026-claim-verification/" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                    Live Showcase ↗
+                  </a>
+                  <a href="https://github.com/WikiEducationFoundation/WikiEduDashboard/pull/7204" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                    Merged PR ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project: Fedora Docling (Visual Evaluation Cards) -->
+            <article class="work-card-large">
+              <div class="work-card-media"
+                style="background: radial-gradient(circle at 50% 100%, #FFF4ED 0%, var(--accent-peach) 100%);">
+                <div style="width: 100%; max-width: 340px; display: flex; gap: 10px; align-items: flex-end;">
+                  <div
+                    style="flex: 1; background: #FFF; border-radius: 8px 8px 0 0; padding: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden;">
+                    <div
+                      style="font-size: 0.58rem; font-weight: 700; color: #171A38; margin-bottom: 4px; text-align: center;">
+                      Swahili Line Length</div>
+                    <img src="Assets/Images/swahili-line-length.png" alt="Swahili line length analysis chart"
+                      style="width: 100%; aspect-ratio: 4/3; object-fit: contain;">
+                  </div>
+                  <div
+                    style="flex: 1; background: #FFF; border-radius: 8px 8px 0 0; padding: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden;">
+                    <div
+                      style="font-size: 0.58rem; font-weight: 700; color: #171A38; margin-bottom: 4px; text-align: center;">
+                      Word Count Compare</div>
+                    <img src="Assets/Images/word-count-comparison.png" alt="Word count comparison chart"
+                      style="width: 100%; aspect-ratio: 4/3; object-fit: contain;">
+                  </div>
+                </div>
+              </div>
+              <div class="work-card-content">
+                <div style="margin-bottom: 10px;">
+                  <span class="tag tag-blush">Fedora Project</span>
+                  <span class="tag tag-navy">Docling &amp; RamaLama</span>
+                </div>
+                <h3 class="work-card-title">Fedora Multilingual OCR Evaluation</h3>
+                <p class="work-card-desc">
+                  How accurately do modern open-source OCR engines transcribe low-resource language typography? I
+                  benchmarked Tesseract, EasyOCR, and RapidOCR on Swahili and French documents, documenting error
+                  distributions and layout retention challenges. Alongside the benchmarks, I authored developer
+                  documentation for the Fedora and RamaLama communities.
+                </p>
+                <div class="work-card-meta">
+                  <strong>Focus:</strong> Multilingual OCR benchmarking, error analysis &amp; developer documentation
+                </div>
+                <div class="work-card-footer" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                  <a href="https://uxer-janine.github.io/outreachy-portfolio/" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-burgundy btn-sm">
+                    Showcase ↗
+                  </a>
+                  <a href="https://github.com/Uxer-Janine/outreachy-docling-task" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                    GitHub Repo ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ==================================================================
+             Category 3: Data Science & Analytics (4 Projects)
+             ================================================================== -->
+        <div class="work-category-group" id="data-science-work">
+          <div class="work-category-title">
+            <span>Data Science &amp; Analytics</span>
+            <span class="work-category-count">4 Projects</span>
+          </div>
+
+          <div class="work-cards-grid">
+
+            <!-- Financial Guardian -->
+            <article class="work-card-large">
+              <div class="work-card-media"
+                style="background: radial-gradient(circle at 50% 100%, #1A1D2E 0%, #10121F 100%);">
+                <div class="ui-data-analytics-box" style="max-width: 320px; height: 170px;">
+                  <div class="ui-data-header">
+                    <span class="ui-data-title">Debt Web Telemetry</span>
+                    <span class="ui-data-badge">High Risk Alert</span>
+                  </div>
+                  <div class="ui-data-chart-slot">
+                    <div class="ui-chart-bar" style="height: 35%;"></div>
+                    <div class="ui-chart-bar" style="height: 55%;"></div>
+                    <div class="ui-chart-bar" style="height: 40%;"></div>
+                    <div class="ui-chart-bar" style="height: 85%;"></div>
+                    <div class="ui-chart-bar" style="height: 70%;"></div>
+                    <div class="ui-chart-bar" style="height: 95%;"></div>
+                  </div>
+                  <div class="ui-data-metric-row">
+                    <span>Overlapping Loans: 4 Apps</span>
+                    <span style="color: #FF85B3; font-weight: 700;">Debt Index: 0.78</span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-card-content">
+                <div style="margin-bottom: 10px;">
+                  <span class="tag tag-peach">Data Science</span>
+                  <span class="tag tag-navy">Risk Modeling</span>
+                </div>
+                <h3 class="work-card-title">Financial Guardian AI — Unmasking Debt Webs</h3>
+                <p class="work-card-desc">
+                  In fast-moving digital microfinance, borrowers often juggle multiple hidden loans across apps without
+                  visibility, leading to unseen debt spirals. I analyzed borrower transaction patterns and built
+                  exploratory visualizations that reveal overlapping debt networks, helping credit teams detect
+                  over-indebtedness early.
+                </p>
+                <div class="work-card-meta">
+                  <strong>Focus:</strong> Data cleaning, network graph visualization &amp; risk pattern analysis
+                </div>
+                <div class="work-card-footer">
+                  <a href="https://github.com/Uxer-Janine/Financial-Guardian-AI-Unmasking-Hidden-Debt-Webs."
+                    target="_blank" rel="noopener noreferrer" class="btn btn-burgundy btn-sm">
+                    View on GitHub ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Renewable Energy -->
+            <article class="work-card-large">
+              <div class="work-card-media"
+                style="background: radial-gradient(circle at 50% 100%, #1A2338 0%, #0F1626 100%);">
+                <div class="ui-data-analytics-box" style="max-width: 320px; height: 170px;">
+                  <div class="ui-data-header">
+                    <span class="ui-data-title">Grid Demand Forecast</span>
+                    <span class="ui-data-badge" style="background: rgba(39, 201, 63, 0.2); color: #4ADE80;">SARIMAX
+                      Ready</span>
+                  </div>
+                  <div class="ui-data-chart-slot">
+                    <div class="ui-chart-bar" style="height: 50%; background: #38BDF8;"></div>
+                    <div class="ui-chart-bar" style="height: 60%; background: #38BDF8;"></div>
+                    <div class="ui-chart-bar" style="height: 75%; background: #38BDF8;"></div>
+                    <div class="ui-chart-bar" style="height: 65%; background: #38BDF8;"></div>
+                    <div class="ui-chart-bar" style="height: 82%; background: #4ADE80;"></div>
+                    <div class="ui-chart-bar" style="height: 90%; background: #4ADE80;"></div>
+                  </div>
+                  <div class="ui-data-metric-row">
+                    <span>Clean Share: 89.2%</span>
+                    <span style="color: #4ADE80; font-weight: 700;">Peak: 2,140 MW</span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-card-content">
+                <div style="margin-bottom: 10px;">
+                  <span class="tag tag-navy">Time-Series</span>
+                  <span class="tag tag-peach">SARIMAX Modeling</span>
+                </div>
+                <h3 class="work-card-title">Kenya Renewable Energy Demand Forecasting</h3>
+                <p class="work-card-desc">
+                  With Kenya drawing the vast majority of its electricity from geothermal, hydro, and wind, anticipating
+                  seasonal peaks is essential for grid resilience. I analyzed national generation datasets and developed
+                  SARIMAX time-series forecasting models to predict consumption trends and support cleaner energy
+                  distribution.
+                </p>
+                <div class="work-card-meta">
+                  <strong>Focus:</strong> Time-series decomposition, SARIMAX forecasting &amp; energy analytics
+                </div>
+                <div class="work-card-footer">
+                  <a href="https://github.com/Uxer-Janine/Renewable-Energy-Forecasting" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-burgundy btn-sm">
+                    View on GitHub ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- FlightRisk -->
+            <article class="work-card-large">
+              <div class="work-card-media"
+                style="background: radial-gradient(circle at 50% 100%, #202436 0%, #131522 100%);">
+                <div class="ui-data-analytics-box" style="max-width: 320px; height: 170px;">
+                  <div class="ui-data-header">
+                    <span class="ui-data-title">Aviation Incident Severity</span>
+                    <span class="ui-data-badge" style="background: rgba(255, 189, 46, 0.2); color: #FBBF24;">EDA
+                      Model</span>
+                  </div>
+                  <div class="ui-data-chart-slot">
+                    <div class="ui-chart-bar" style="height: 70%; background: #FBBF24;"></div>
+                    <div class="ui-chart-bar" style="height: 45%; background: #FBBF24;"></div>
+                    <div class="ui-chart-bar" style="height: 30%; background: #FBBF24;"></div>
+                    <div class="ui-chart-bar" style="height: 80%; background: #EF4444;"></div>
+                    <div class="ui-chart-bar" style="height: 60%; background: #EF4444;"></div>
+                    <div class="ui-chart-bar" style="height: 25%; background: #34D399;"></div>
+                  </div>
+                  <div class="ui-data-metric-row">
+                    <span>Operating Conditions Matrix</span>
+                    <span style="color: #FBBF24; font-weight: 700;">Hull Loss Correlation</span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-card-content">
+                <div style="margin-bottom: 10px;">
+                  <span class="tag tag-blush">Data Cleaning</span>
+                  <span class="tag tag-navy">Statistical EDA</span>
+                </div>
+                <h3 class="work-card-title">FlightRisk — Aviation Accident Severity</h3>
+                <p class="work-card-desc">
+                  Examining decades of flight safety records to identify operating conditions most closely correlated
+                  with severe outcomes. I cleaned and synthesized dense incident logs into exploratory data
+                  visualisations, highlighting how aircraft category, engine configurations, and flight phases influence
+                  survivability.
+                </p>
+                <div class="work-card-meta">
+                  <strong>Focus:</strong> Data sanitization, feature correlation &amp; statistical visualizations
+                </div>
+                <div class="work-card-footer">
+                  <a href="https://github.com/Uxer-Janine/FlightRisk-Aviation-Accident-Analysis" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-burgundy btn-sm">
+                    View on GitHub ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- YEN Africa -->
+            <article class="work-card-large">
+              <div class="work-card-media"
+                style="background: radial-gradient(circle at 50% 100%, #2A1828 0%, #1A0E18 100%);">
+                <div class="ui-data-analytics-box" style="max-width: 320px; height: 170px;">
+                  <div class="ui-data-header">
+                    <span class="ui-data-title">Commercial KPI Dashboard</span>
+                    <span class="ui-data-badge" style="background: rgba(232, 62, 121, 0.25); color: #FF85B3;">Executive
+                      View</span>
+                  </div>
+                  <div class="ui-data-chart-slot">
+                    <div class="ui-chart-bar" style="height: 40%; background: #FF85B3;"></div>
+                    <div class="ui-chart-bar" style="height: 65%; background: #FF85B3;"></div>
+                    <div class="ui-chart-bar" style="height: 55%; background: #FF85B3;"></div>
+                    <div class="ui-chart-bar" style="height: 80%; background: #E83E79;"></div>
+                    <div class="ui-chart-bar" style="height: 90%; background: #E83E79;"></div>
+                    <div class="ui-chart-bar" style="height: 100%; background: #E83E79;"></div>
+                  </div>
+                  <div class="ui-data-metric-row">
+                    <span>Conversion Rate: +18.4%</span>
+                    <span style="color: #FF85B3; font-weight: 700;">Revenue Telemetry</span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-card-content">
+                <div style="margin-bottom: 10px;">
+                  <span class="tag tag-peach">Commercial Analytics</span>
+                  <span class="tag tag-navy">Executive Dashboards</span>
+                </div>
+                <h3 class="work-card-title">YEN Africa Commercial &amp; Sales Analytics</h3>
+                <p class="work-card-desc">
+                  Translating operational telemetry into clear business strategy. I validate and reconcile multi-channel
+                  sales and customer datasets, design interactive executive dashboards, and uncover conversion patterns
+                  that help the leadership team make informed growth decisions.
+                </p>
+                <div class="work-card-meta">
+                  <strong>Role:</strong> Data Science Consultant · Oct 2025–Present
+                </div>
+                <div class="work-card-footer">
+                  <span class="featured-card-link" style="color: var(--text-muted);">
+                    Active consultancy engagement
+                  </span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ==================================================================
+             Category 4: Engineering Foundations (1 Overview)
+             ================================================================== -->
+        <div class="work-category-group" id="engineering-work">
+          <div class="work-category-title">
+            <span>Engineering Foundations</span>
+            <span class="work-category-count">1 Overview</span>
+          </div>
+
+          <div class="work-cards-grid" style="grid-template-columns: 1fr;">
+
+            <article class="work-card-large" style="flex-direction: row;">
+              <div class="work-card-content" style="padding: 36px;">
+                <div style="margin-bottom: 12px;">
+                  <span class="tag tag-navy">Telecommunications &amp; Information Engineering</span>
+                  <span class="tag tag-peach">JKUAT &amp; Unitel Kenya</span>
+                </div>
+                <h3 class="work-card-title">Systems Engineering &amp; Network Telemetry</h3>
+                <p class="work-card-desc" style="max-width: 800px;">
+                  My engineering background in Telecommunications and Information Engineering provided rigorous
+                  foundations in data communications, routing protocols, systems architecture, and hardware-software
+                  telemetry. During my engineering internship at Unitel Kenya (2019–2021), I supported core network
+                  performance monitoring, diagnostic troubleshooting, and technical documentation. This systems-level
+                  understanding gives my design work structural integrity—ensuring that what looks good on screen can be
+                  built reliably at scale.
+                </p>
+                <div class="work-card-meta" style="max-width: 500px;">
+                  <strong>Academic Credential:</strong> BSc Telecommunications &amp; Information Engineering (JKUAT,
+                  2017–2023)
+                </div>
+                <div class="work-card-footer">
+                  <a href="Assets/CVs/Janine_Makorre_Service_Designer_CV.pdf"
+                    download="Janine_Makorre_Service_Designer_CV.pdf" class="btn btn-burgundy btn-sm">
+                    Download full CV for detailed engineering history ↓
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
 
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Level 2: Scalable Filterable Archive -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Level 2 — Full Project Archive</span>
-        <h2 class="section-title">Filterable Work Catalog</h2>
-        <p>A comprehensive, highly scannable list of past projects, open-source repositories, design audits, and data experiments.</p>
+    <!-- ==========================================================================
+         Contact & Footer (Dark Midnight Navy · Matching Home)
+         ========================================================================== -->
+    <footer class="contact-dark-section" id="contact">
+      <div class="container">
+        <div class="contact-dark-grid">
+          <!-- Left Column -->
+          <div>
+            <span class="contact-dark-eyebrow">LET'S COLLABORATE</span>
+            <h2 class="contact-dark-headline">
+              Let's build<br>thoughtful<br>experiences.
+            </h2>
+            <p class="contact-dark-lead">
+              I'd love to hear about design roles, product and service collaborations, open-source work, and community
+              or social-impact initiatives.
+            </p>
+            <a href="mailto:janinemakorre@gmail.com" class="contact-dark-email">
+              janinemakorre@gmail.com ↗
+            </a>
+          </div>
+
+          <!-- Right Column -->
+          <div>
+            <h3 class="contact-dark-subhead">
+              Find my work.<br>
+              Start a conversation.
+            </h3>
+            <div class="contact-social-grid">
+              <a href="https://www.linkedin.com/in/janine-makorre-30a456179/" target="_blank" rel="noopener noreferrer"
+                class="social-dark-btn">
+                <span><strong>in</strong> LinkedIn</span>
+                <span>↗</span>
+              </a>
+              <a href="https://www.behance.net/janinemakorre" target="_blank" rel="noopener noreferrer"
+                class="social-dark-btn">
+                <span><strong>Bē</strong> Behance</span>
+                <span>↗</span>
+              </a>
+              <a href="https://github.com/Uxer-Janine" target="_blank" rel="noopener noreferrer"
+                class="social-dark-btn">
+                <span><strong>&lt;/&gt;</strong> GitHub</span>
+                <span>↗</span>
+              </a>
+              <a href="https://dribbble.com/Janine_Robi" target="_blank" rel="noopener noreferrer"
+                class="social-dark-btn">
+                <span><strong>⚽</strong> Dribbble</span>
+                <span>↗</span>
+              </a>
+              <a href="https://medium.com/@janinemakorre" target="_blank" rel="noopener noreferrer"
+                class="social-dark-btn" style="grid-column: span 2;">
+                <span><strong>M</strong> Medium</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="site-bottom-footer-bar">
+          <div>
+            <strong>Janine Makorre.</strong> Service &amp; product design · Research · Community
+          </div>
+          <div style="display: flex; gap: 24px; align-items: center;">
+            <a href="#top" style="color: rgba(255,255,255,0.7); text-decoration: underline;">Back to top ↑</a>
+            <span>© 2026 Janine Makorre</span>
+          </div>
+        </div>
       </div>
+    </footer>
 
-      <!-- Filter Pills -->
-      <div class="filter-bar">
-        <button class="filter-pill active" data-filter="all">All (12)</button>
-        <button class="filter-pill" data-filter="design">Design</button>
-        <button class="filter-pill" data-filter="servicedesign">Service Design</button>
-        <button class="filter-pill" data-filter="research">Research</button>
-        <button class="filter-pill" data-filter="data">Data</button>
-        <button class="filter-pill" data-filter="datascience">Data Science</button>
-        <button class="filter-pill" data-filter="mlai">AI / ML</button>
-        <button class="filter-pill" data-filter="opensource">Open Source</button>
-        <button class="filter-pill" data-filter="community">Community</button>
-      </div>
+  </main>
 
-      <!-- Archive Table -->
-      <table class="archive-table">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th>Project Title</th>
-            <th>Discipline</th>
-            <th>Description</th>
-            <th>Tools / Tech</th>
-            <th>Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          
-          <tr data-category="servicedesign design data">
-            <td>2024</td>
-            <td class="archive-title">eCitizen National Digital Platform</td>
-            <td>Service Design & Analytics</td>
-            <td>Mapped national citizen journeys and analyzed portal telemetry.</td>
-            <td>Figma, Python, Analytics</td>
-            <td><a href="journey.html#ecitizen">View Details ↗</a></td>
-          </tr>
-
-          <tr data-category="research design community">
-            <td>2024</td>
-            <td class="archive-title">Oppia Usability Field Research</td>
-            <td>User Research & UX</td>
-            <td>Conducted on-site usability testing for primary education apps.</td>
-            <td>Qualitative Methods, Figma</td>
-            <td><a href="journey.html">View Details ↗</a></td>
-          </tr>
-
-          <tr data-category="datascience mlai data">
-            <td>2024</td>
-            <td class="archive-title">Financial Guardian AI</td>
-            <td>Data Science & ML</td>
-            <td>Real-time anomaly detection pipeline for mobile transactions.</td>
-            <td>Python, Scikit-Learn, Pandas</td>
-            <td><a href="https://github.com/Uxer-Janine" target="_blank">GitHub ↗</a></td>
-          </tr>
-
-          <tr data-category="opensource mlai">
-            <td>2024</td>
-            <td class="archive-title">Docling OCR Pipeline</td>
-            <td>Open Source / ML</td>
-            <td>Structured table extraction and OCR token parsing model.</td>
-            <td>Python, Docling, PyTorch</td>
-            <td><a href="project-ramalama.html">Doc ↗</a></td>
-          </tr>
-
-          <tr data-category="opensource research">
-            <td>2024</td>
-            <td class="archive-title">Ramalama Open Source Documentation</td>
-            <td>Open Source & Technical Writing</td>
-            <td>Redesigned contributor docs and API usage guidelines for Ramalama.</td>
-            <td>Markdown, Git, Open Source</td>
-            <td><a href="project-ramalama.html">Case Study ↗</a></td>
-          </tr>
-
-          <tr data-category="datascience data">
-            <td>2024</td>
-            <td class="archive-title">Renewable Energy Yield Forecasting</td>
-            <td>Data Science & Forecasting</td>
-            <td>Predictive time-series model forecasting regional solar array load.</td>
-            <td>Prophet, Python, Seaborn</td>
-            <td><a href="https://github.com/Uxer-Janine" target="_blank">GitHub ↗</a></td>
-          </tr>
-
-          <tr data-category="community design">
-            <td>2023</td>
-            <td class="archive-title">FGM Survivor Rehabilitation Network Portal</td>
-            <td>Community & UI UX</td>
-            <td>Designed accessible digital portal for survivor support resources.</td>
-            <td>Figma, Web Design</td>
-            <td><a href="community.html">Community ↗</a></td>
-          </tr>
-
-          <tr data-category="data datascience">
-            <td>2023</td>
-            <td class="archive-title">Healthcare Patient Churn Analytics</td>
-            <td>Data Analytics</td>
-            <td>Built interactive cohort retention dashboard for regional clinics.</td>
-            <td>SQL, PowerBI, Python</td>
-            <td><a href="https://github.com/Uxer-Janine" target="_blank">GitHub ↗</a></td>
-          </tr>
-
-          <tr data-category="design">
-            <td>2023</td>
-            <td class="archive-title">AgriTech Mobile Marketplace Audit</td>
-            <td>UI/UX Design</td>
-            <td>User interface audit and checkout flow redesign for smallholder farmers.</td>
-            <td>Figma, Wireframing</td>
-            <td><a href="projects.html">Archive ↗</a></td>
-          </tr>
-
-          <tr data-category="datascience mlai">
-            <td>2023</td>
-            <td class="archive-title">Credit Risk Scoring Engine</td>
-            <td>Machine Learning</td>
-            <td>Evaluated logistic regression and XGBoost models for micro-loans.</td>
-            <td>XGBoost, Python, Jupyter</td>
-            <td><a href="https://github.com/Uxer-Janine" target="_blank">GitHub ↗</a></td>
-          </tr>
-
-          <tr data-category="community">
-            <td>2023</td>
-            <td class="archive-title">Youth Mentorship & Tech Workshops</td>
-            <td>Community Advocacy</td>
-            <td>Organized community workshops introducing young women to data tools.</td>
-            <td>Mentorship, Outreach</td>
-            <td><a href="community.html">Community ↗</a></td>
-          </tr>
-
-          <tr data-category="data">
-            <td>2022</td>
-            <td class="archive-title">East Africa Trade Flow Data Pipeline</td>
-            <td>Data Engineering</td>
-            <td>ETL pipeline aggregating regional customs and shipping statistics.</td>
-            <td>Python, SQL, ETL</td>
-            <td><a href="https://github.com/Uxer-Janine" target="_blank">GitHub ↗</a></td>
-          </tr>
-
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer-cta">
-    <div class="container">
-      <h2 class="cta-title">Have a project or research initiative in mind?</h2>
-      <a href="mailto:janinerobi@gmail.com" class="btn btn-primary">janinerobi@gmail.com</a>
-      <div class="footer-bottom">
-        &copy; 2026 Janine Robi Makorre. All rights reserved.
-      </div>
-    </div>
-  </footer>
-
-  <script src="components.js"></script>
+  <script src="components.js?v=content-refinement-v4"></script>
 </body>
+
 </html>

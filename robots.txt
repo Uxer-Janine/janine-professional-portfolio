@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://uxer-janine.github.io/janine-professional-portfolio/sitemap.xml
