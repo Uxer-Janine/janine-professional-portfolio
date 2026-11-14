@@ -1,0 +1,1 @@
+Unmodified Bootstrap Icons v1.11.3 SVG files from https://github.com/twbs/icons/tree/v1.11.3/icons. MIT license preserved in LICENSE.txt. Used decoratively alongside visible platform names on Contact.

@@ -1,0 +1,59 @@
+{
+  "scope": "Phase 4 Step 1 — Contact only; sitewide audit deferred until approval",
+  "previousHtml": "<!DOCTYPE html>\n<html lang=\"en\" data-theme=\"dark\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Contact — Janine Makorre</title>\n  <meta name=\"description\" content=\"Get in touch with Janine Robi Makorre for product design leadership, service architecture, or data science collaboration.\">\n  <script>try{const t=localStorage.getItem('janine-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch{}</script><link rel=\"stylesheet\" href=\"style.css?v=phase1-review\">\n</head>\n<body>\n\n  <!-- Navigation Header -->\n  <header class=\"site-header\">\n    <div class=\"container nav-container\">\n      <a href=\"index.html\" class=\"logo\">\n        Janine Makorre <span class=\"logo-dot\"></span>\n      </a>\n      \n      <button class=\"menu-toggle\" type=\"button\" aria-label=\"Toggle Navigation\" aria-controls=\"main-navigation\" aria-expanded=\"false\">\n        <span></span>\n        <span></span>\n        <span></span>\n      </button>\n\n      <nav aria-label=\"Main navigation\"><ul class=\"nav-links\" id=\"main-navigation\"><li><a href=\"about.html\">About</a></li><li><a href=\"projects.html\">Work</a></li><li><a href=\"journey.html\">Experience</a></li><li><a href=\"community.html\">Community &amp; Impact</a></li><li><a href=\"contact.html\" class=\"active\" aria-current=\"page\">Contact</a></li><li>\n          <button class=\"theme-btn\" aria-label=\"Toggle Light/Dark Theme\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <circle cx=\"12\" cy=\"12\" r=\"4\"></circle>\n              <path d=\"M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41\"></path>\n            </svg>\n          </button>\n        </li></ul></nav>\n    </div>\n  </header>\n\n  <!-- Page Banner -->\n  <section class=\"section\" style=\"padding-top: 170px; padding-bottom: 80px; text-align: center;\">\n    <div class=\"container\" style=\"max-width: 680px;\">\n      <span class=\"section-label\">Start a Conversation</span>\n      <h1 style=\"font-size: clamp(2.5rem, 5vw, 3.8rem); font-family: var(--font-sans); font-weight: 500;\">\n        Have an interesting problem? <br>\n        <span class=\"serif-font\" style=\"font-style: italic;\">Let's talk.</span>\n      </h1>\n      <p class=\"lead\" style=\"margin-top: 20px; margin-bottom: 40px;\">\n        Whether you are hiring for product design leadership, service architecture, machine learning research, or open-source collaboration — I'm always open to meaningful conversations.\n      </p>\n\n      <div style=\"margin-bottom: 48px;\">\n        <a href=\"mailto:janinemakorre@gmail.com\" class=\"btn btn-primary\" style=\"font-size: 1.1rem; padding: 16px 36px;\">\n          Send an Email: janinemakorre@gmail.com\n        </a>\n      </div>\n\n      <div style=\"background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 12px; padding: 36px; text-align: left;\">\n        <h3 style=\"font-family: var(--font-sans); font-size: 1.2rem; color: var(--text-primary); margin-bottom: 16px;\">Connect Across Platforms</h3>\n        \n        <div style=\"display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;\">\n          <a href=\"https://github.com/Uxer-Janine\" target=\"_blank\" class=\"social-link\" style=\"font-size: 1rem; padding: 8px 0;\">\n            <strong>GitHub</strong> — Code, Open Source & Repositories ↗\n          </a>\n          <a href=\"https://linkedin.com/in/janine-robi\" target=\"_blank\" class=\"social-link\" style=\"font-size: 1rem; padding: 8px 0;\">\n            <strong>LinkedIn</strong> — Professional Network ↗\n          </a>\n          <a href=\"https://behance.net/janinerobi\" target=\"_blank\" class=\"social-link\" style=\"font-size: 1rem; padding: 8px 0;\">\n            <strong>Behance</strong> — Visual & Service Portfolios ↗\n          </a>\n          <a href=\"https://dribbble.com/janinerobi\" target=\"_blank\" class=\"social-link\" style=\"font-size: 1rem; padding: 8px 0;\">\n            <strong>Dribbble</strong> — UI Concepts & Prototypes ↗\n          </a>\n          <a href=\"https://medium.com/@janinemakorre\" target=\"_blank\" class=\"social-link\" style=\"font-size: 1rem; padding: 8px 0; grid-column: span 2;\">\n            <strong>Medium</strong> — Articles on UX Research, Service Design & Data ↗\n          </a>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <!-- Footer -->\n  <footer class=\"site-footer\" style=\"text-align: center; padding: 40px 0; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.85rem;\">\n    <div class=\"container\">\n      &copy; 2026 Janine Robi Makorre. Designed with restraint, clarity, and precision.\n    </div>\n  </footer>\n\n  <script src=\"components.js?v=phase1\"></script>\n</body>\n</html>\n",
+  "primaryEmail": "janinemakorre@gmail.com",
+  "profiles": [
+    {
+      "name": "LinkedIn",
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/in/janine-makorre-30a456179/",
+      "description": "My professional background and connections.",
+      "action": "View my LinkedIn profile",
+      "source": "Data-science CV; matching link on verified Behance profile",
+      "check": "CV-backed URL; LinkedIn requires joining or signing in to inspect the profile.",
+      "previous": "https://linkedin.com/in/janine-robi"
+    },
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/Uxer-Janine",
+      "description": "Repositories and open-source contributions.",
+      "action": "Explore my GitHub",
+      "source": "Data-science CV; existing project repository links",
+      "check": "Public profile displays Janine Robi Makorre."
+    },
+    {
+      "name": "Behance",
+      "icon": "behance",
+      "url": "https://www.behance.net/janinemakorre",
+      "description": "Design projects and visual work.",
+      "action": "View my Behance work",
+      "source": "Service-design CV text and PDF hyperlink",
+      "check": "Public profile displays Janine Robi Makorre and design work.",
+      "previous": "https://behance.net/janinerobi"
+    },
+    {
+      "name": "Dribbble",
+      "icon": "dribbble",
+      "url": "https://dribbble.com/Janine_Robi",
+      "description": "UI concepts and design explorations.",
+      "action": "View my Dribbble work",
+      "source": "Cross-linked from the verified CV-listed Behance profile",
+      "check": "Public profile displays Janine Robi Makorre and design shots.",
+      "previous": "https://dribbble.com/janinerobi"
+    },
+    {
+      "name": "Medium",
+      "icon": "medium",
+      "url": "https://medium.com/@janinemakorre",
+      "description": "Writing, reflections, and contributor guides.",
+      "action": "Read my articles",
+      "source": "Existing approved published Medium guide and verified author profile",
+      "check": "Profile lists the published Phabricator guide and other contributor articles."
+    }
+  ],
+  "limitations": [
+    "LinkedIn destination supported by CV and Behance cross-link; live profile details gated."
+  ],
+  "iconSource": "Unmodified Bootstrap Icons v1.11.3, with MIT license, in Assets/Icons/bootstrap."
+}

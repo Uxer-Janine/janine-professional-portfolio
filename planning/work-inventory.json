@@ -1,0 +1,172 @@
+{
+  "reviewedOn": "2026-10-31",
+  "purpose": "Internal planning inventory; unresolved records are not rendered as public cards. Historical descriptions below are preserved for review, not endorsed as accurate.",
+  "publicCards": [
+    "oppia",
+    "financial-guardian",
+    "energy-forecasting",
+    "aviation-analysis",
+    "wikipedia",
+    "docling"
+  ],
+  "originalArchive": [
+    {
+      "previousYear": "2024",
+      "title": "eCitizen National Digital Platform",
+      "previousDiscipline": "Service Design & Analytics",
+      "previousDescription": "Mapped national citizen journeys and analyzed portal telemetry.",
+      "previousTools": "Figma, Python, Analytics",
+      "previousLink": "journey.html#ecitizen"
+    },
+    {
+      "previousYear": "2024",
+      "title": "Oppia Usability Field Research",
+      "previousDiscipline": "User Research & UX",
+      "previousDescription": "Conducted on-site usability testing for primary education apps.",
+      "previousTools": "Qualitative Methods, Figma",
+      "previousLink": "journey.html"
+    },
+    {
+      "previousYear": "2024",
+      "title": "Financial Guardian AI",
+      "previousDiscipline": "Data Science & ML",
+      "previousDescription": "Real-time anomaly detection pipeline for mobile transactions.",
+      "previousTools": "Python, Scikit-Learn, Pandas",
+      "previousLink": "https://github.com/Uxer-Janine"
+    },
+    {
+      "previousYear": "2024",
+      "title": "Docling OCR Pipeline",
+      "previousDiscipline": "Open Source / ML",
+      "previousDescription": "Structured table extraction and OCR token parsing model.",
+      "previousTools": "Python, Docling, PyTorch",
+      "previousLink": "project-ramalama.html"
+    },
+    {
+      "previousYear": "2024",
+      "title": "Ramalama Open Source Documentation",
+      "previousDiscipline": "Open Source & Technical Writing",
+      "previousDescription": "Redesigned contributor docs and API usage guidelines for Ramalama.",
+      "previousTools": "Markdown, Git, Open Source",
+      "previousLink": "project-ramalama.html"
+    },
+    {
+      "previousYear": "2024",
+      "title": "Renewable Energy Yield Forecasting",
+      "previousDiscipline": "Data Science & Forecasting",
+      "previousDescription": "Predictive time-series model forecasting regional solar array load.",
+      "previousTools": "Prophet, Python, Seaborn",
+      "previousLink": "https://github.com/Uxer-Janine"
+    },
+    {
+      "previousYear": "2023",
+      "title": "FGM Survivor Rehabilitation Network Portal",
+      "previousDiscipline": "Community & UI UX",
+      "previousDescription": "Designed accessible digital portal for survivor support resources.",
+      "previousTools": "Figma, Web Design",
+      "previousLink": "community.html"
+    },
+    {
+      "previousYear": "2023",
+      "title": "Healthcare Patient Churn Analytics",
+      "previousDiscipline": "Data Analytics",
+      "previousDescription": "Built interactive cohort retention dashboard for regional clinics.",
+      "previousTools": "SQL, PowerBI, Python",
+      "previousLink": "https://github.com/Uxer-Janine"
+    },
+    {
+      "previousYear": "2023",
+      "title": "AgriTech Mobile Marketplace Audit",
+      "previousDiscipline": "UI/UX Design",
+      "previousDescription": "User interface audit and checkout flow redesign for smallholder farmers.",
+      "previousTools": "Figma, Wireframing",
+      "previousLink": "projects.html"
+    },
+    {
+      "previousYear": "2023",
+      "title": "Credit Risk Scoring Engine",
+      "previousDiscipline": "Machine Learning",
+      "previousDescription": "Evaluated logistic regression and XGBoost models for micro-loans.",
+      "previousTools": "XGBoost, Python, Jupyter",
+      "previousLink": "https://github.com/Uxer-Janine"
+    },
+    {
+      "previousYear": "2023",
+      "title": "Youth Mentorship & Tech Workshops",
+      "previousDiscipline": "Community Advocacy",
+      "previousDescription": "Organized community workshops introducing young women to data tools.",
+      "previousTools": "Mentorship, Outreach",
+      "previousLink": "community.html"
+    },
+    {
+      "previousYear": "2022",
+      "title": "East Africa Trade Flow Data Pipeline",
+      "previousDiscipline": "Data Engineering",
+      "previousDescription": "ETL pipeline aggregating regional customs and shipping statistics.",
+      "previousTools": "Python, SQL, ETL",
+      "previousLink": "https://github.com/Uxer-Janine"
+    }
+  ],
+  "awaitingVerification": [
+    {
+      "title": "eCitizen",
+      "state": "Reserved design case study",
+      "known": "Service Designer, August 2024–Present, per service-design CV; data responsibilities from January 2026 per data-science CV.",
+      "needed": "Approved public scope, sanitized artifacts, case study and evidence link. Keep operational details confidential."
+    },
+    {
+      "title": "Kenya Connect",
+      "state": "Reserved design case study",
+      "needed": "Problem, role, dates, artifacts, status and evidence."
+    },
+    {
+      "title": "Maziwa Link",
+      "state": "Reserved design case study",
+      "needed": "Problem, role, dates, artifacts, status and evidence."
+    },
+    {
+      "title": "Additional unpublished design case studies",
+      "state": "Reserved inventory only",
+      "needed": "Names, permission to share, role, evidence and completion status."
+    },
+    {
+      "title": "Healthcare Patient Churn Analytics",
+      "state": "Existing entry retained pending verification",
+      "needed": "Actual repository/report, dataset, individual contribution and status. No matching public repository or supporting CV entry established in this review."
+    },
+    {
+      "title": "Credit Risk Scoring Engine",
+      "state": "Existing entry retained pending verification",
+      "needed": "Specific evidence; confirm whether separate from Financial Guardian rather than a duplicate."
+    },
+    {
+      "title": "East Africa Trade Flow Data Pipeline",
+      "state": "Existing entry retained pending verification",
+      "needed": "Specific repository, dataset, implementation evidence, role and dates."
+    },
+    {
+      "title": "AgriTech Mobile Marketplace Audit",
+      "state": "Existing entry retained pending verification",
+      "needed": "Audit/design artifacts, individual role and a direct case-study destination."
+    },
+    {
+      "title": "FGM Survivor Rehabilitation Network Portal",
+      "state": "Existing entry retained for Community phase",
+      "needed": "Confirm initiative, actual scope, status, and public-safe evidence. Do not infer a completed support portal."
+    },
+    {
+      "title": "Youth Mentorship & Tech Workshops",
+      "state": "Existing entry retained for Community phase",
+      "needed": "Map to Vumbua Tech, Mingling Trends Marketing or other actual initiative; verify scope and dates."
+    }
+  ],
+  "scopeNotes": [
+    "Oppia: the public card describes the three-participant topic-page study. The CV claim of 60+ students across 10+ schools is a separate, unresolved scope and is not combined or published on the card.",
+    "Fedora dates January–October 2026 are sourced from the data-science CV. Contribution work is not described as an internship; no upstream code merge is asserted.",
+    "Docling OCR and RamaLama documentation, previously separate archive rows, are grouped under one Fedora card with both showcase and OCR repository links.",
+    "Financial Guardian: group project using synthetic data. Individual data preparation, analysis and visualization contributions are sourced from the data-science CV.",
+    "Renewable Energy: the public repository is a fork of the collaborative project. README and CV support electricity trends and SARIMAX, not the old solar-yield/Prophet summary.",
+    "Aviation: README credits Janine as author. Present as exploratory analysis; do not infer comparative safety rates from incident counts without exposure data.",
+    "No private repositories or inaccessible evidence were assumed absent. Unresolved entries remain for user follow-up."
+  ]
+}

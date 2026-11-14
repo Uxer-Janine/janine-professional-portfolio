@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60" width="40" height="24">
+  <!-- Child mark -->
+  <circle cx="60" cy="14" r="6" fill="#E83E79" />
+  <path d="M52 24 C52 18, 68 18, 68 24 L66 32 L54 32 Z" fill="#8F1748" />
+  <!-- Text -->
+  <text x="60" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#171A38" text-anchor="middle" letter-spacing="-0.5">ChildsLife</text>
+  <text x="60" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="600" fill="#8F1748" text-anchor="middle" letter-spacing="1">KENYA</text>
+</svg>
